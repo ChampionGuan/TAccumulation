@@ -1,0 +1,12 @@
+TAccumulation/Library/*
+TAccumulation/Temp/*
+/*.sln
+/*.csproj
+/.vs
+/*.DS_Store
+/.vscode
+/*.userprefs
+/*.user
+TAccumulation/TAccumulation.sln
+TAccumulation/TAccumulation.csproj
+TAccumulation/TAccumulation.Editor.csproj
