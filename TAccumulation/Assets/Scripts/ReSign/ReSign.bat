@@ -1,0 +1,1 @@
+jarsigner -verbose -keystore ..\..\male7.keystore -storepass QwefvbnM!@# -signedjar male7.apk com_zgm.unsigned.shell.apk male7

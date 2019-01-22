@@ -1,5 +1,6 @@
 TAccumulation/Library/*
 TAccumulation/Temp/*
+TAccumulation/ab_TAccumulation/*
 /*.sln
 /*.csproj
 /.vs
@@ -10,3 +11,5 @@ TAccumulation/Temp/*
 TAccumulation/TAccumulation.sln
 TAccumulation/TAccumulation.csproj
 TAccumulation/TAccumulation.Editor.csproj
+
+TAccumulation/.vs/TAccumulation/v14/.suo
