@@ -1,0 +1,1 @@
+keytool -genkeypair -alias com.champion.tlcg -keyalg RSA –keysize 4096 -keypass champion -sigalg SHA256withRSA -dname "cn=lichaoguan,ou=duli,o=duli,l=shanghai,st=shanghai,c=CN" -validity 40000 -keystore champion.keystore -storetype JKS -storepass champion
