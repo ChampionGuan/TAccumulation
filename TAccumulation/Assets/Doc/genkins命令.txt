@@ -1,0 +1,1 @@
+-quit -batchmode -nographics -projectPath E:\2_champion\temp\temp  -executeMethod APKBuild.Build -logFile build.log
