@@ -1,5 +1,7 @@
 TAccumulation/Library/*
 TAccumulation/Temp/*
+TAccumulation/Obj/*
+TAccumulation/Logs/*
 TAccumulation/ab_TAccumulation/*
 /*.sln
 /*.csproj
@@ -13,3 +15,4 @@ TAccumulation/TAccumulation.csproj
 TAccumulation/TAccumulation.Editor.csproj
 
 TAccumulation/.vs/TAccumulation/v14/.suo
+TAccumulation/.vscode/settings.json
