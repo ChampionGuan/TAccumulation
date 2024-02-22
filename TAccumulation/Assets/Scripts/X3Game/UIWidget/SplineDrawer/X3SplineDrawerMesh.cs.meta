@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1fb05bb10fb96c945b79f1ae68d95072
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_Material: {instanceID: 0}
+  - m_MainTex: {instanceID: 0}
+  - splineMeshShader: {fileID: 4800000, guid: 36557bdf74ba4274ad932025a32f60c0, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
