@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<linker>
+  <assembly fullname="System">
+    <type fullname="System.ComponentModel.TypeConverter" preserve="all" />
+    <!-- <namespace fullname="System.ComponentModel" preserve="all" /> -->
+  </assembly>
+  <assembly fullname="System.Core">
+    <type fullname="System.Linq.Expressions.Interpreter.LightLambda" preserve="all" />
+  </assembly>
+</linker>
