@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+>>>> ORIGINAL //X3Streams/x3-stage/Program/Client/Assets/Scripts/TestBedScript/BattleFxTester.meta#none
+==== THEIRS //X3Streams/x3-stage/Program/Client/Assets/Scripts/TestBedScript/BattleFxTester.meta#1
+guid: 818ade41b27b64e45ad42cb5f1ccd174
+==== YOURS //1818_x3streams_clone/Program/Client/Assets/Scripts/TestBedScript/BattleFxTester.meta
+guid: b77a563e17c624940a66aa30b5b0a11d
+<<<<
+folderAsset: yes
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
