@@ -1,0 +1,14 @@
+﻿---@class cfg.DailyPhoneRoutine  excel名称:DailyPhone.xlsx
+---@field ##Man string ##男主
+---@field ##RoutineName string ##日程名
+---@field AIName string AI名
+---@field CommonDialogID int 通用Dialog
+---@field ConditionGroupID int 其他解锁条件
+---@field DailyLimit int 每日上限
+---@field DialogID int 日程Dialog
+---@field Interval int 去重时限
+---@field LovePointLevel int 亲密度
+---@field PLBubbleLimit int PL气泡上限
+---@field PLBubbleProbability int PL气泡概率
+---@field RoutineID int 日程
+---@field Scene string 场景名

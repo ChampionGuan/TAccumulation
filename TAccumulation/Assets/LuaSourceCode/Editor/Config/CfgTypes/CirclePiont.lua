@@ -1,0 +1,12 @@
+﻿---@class cfg.CirclePiont  excel名称:Information.xlsx
+---@field ConditionPointList int[] 前置羁绊点组
+---@field Content int 羁绊点效果描述&
+---@field Expend int 消耗羁绊点值
+---@field Group int 组ID
+---@field ID int 羁绊点ID
+---@field Name int 羁绊点名称&
+---@field Order int 排序ID
+---@field Path string 效果图片
+---@field Property cfg.s2int[] 羁绊点属性效果
+---@field Reward cfg.s3int[] 奖励ID
+---@field Type int 羁绊点类型

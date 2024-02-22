@@ -1,0 +1,15 @@
+﻿---@class cfg.FashionSuitData  excel名称:Fashion.xlsx
+---@field ContainClothID int 套装包含服装
+---@field ContainOrnamentsID int[] 套装包含配饰
+---@field ID int 套装ID
+---@field ManChooseCondition cfg.s2int[] 条件权重组
+---@field ManID int 男主ID
+---@field MustContainOrnamentsID int[] 套装必备配饰
+---@field NormalSuggestTalk int 普通推荐对话
+---@field NormalWearTalk cfg.s3int 普通换装对话
+---@field Remark1 string ##构成备注1
+---@field Remark2 string ##构成备注2
+---@field SpecialSuggestTalk int 特殊推荐对话
+---@field SpecialTalkCondition int 特殊对话条件
+---@field SpecialWearTalk cfg.s3int 特殊换装对话
+---@field SuitName string ##套装名备注

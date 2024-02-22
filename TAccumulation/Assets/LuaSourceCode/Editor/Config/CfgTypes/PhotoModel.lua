@@ -1,0 +1,15 @@
+﻿---@class cfg.PhotoModel  excel名称:Photo.xlsx
+---@field BackgroundName string 2D背景替换面片名称
+---@field DefaultBackground int 该模式默认背景
+---@field DefaultMaleAction string 该模式默认男主状态
+---@field DefaultPlayerAction string 该模式默认女主状态
+---@field DefaultPos string 该模式默认相机和人物位置
+---@field Des string ##说明
+---@field ID int 唯一ID
+---@field Image string 界面大图
+---@field IsHide int 是否隐藏
+---@field Light int[] 该模式可用光照
+---@field ModelTag int[] 包含页签
+---@field Name int 模式名称&
+---@field Order int 排序
+---@field Rule int 规则说明

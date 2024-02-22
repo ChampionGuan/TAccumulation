@@ -1,0 +1,19 @@
+syntax = "proto3";
+package X3Data;
+
+message Shop {
+  int64 Id = 1;  // 商店id
+  repeated int32 Rands = 2;  // 随机的商品列表
+  map<int32, int32> Buys = 3;  // 购买记录
+  int32 HandReNum = 4;  // 手动重置次数
+  int64 LastRefreshTime = 5;  // 上一次刷新时间
+  map<int32, int64> ReSets = 6; //刷新商品的下一次刷新时间
+  map<int32, int64> LastBuyTime = 7;  // 该商品最后一次购买的时间
+}
+
+message ShopData {
+  int64 LastRefreshTime = 1;  // 控制商店整体的刷新时机
+  map<int32, int32> HistoryBuys = 2;  // 商品历史购买记录 shopGroup表中ID
+  map<int32, int64> ShopGoodsNextRefTime = 3; //定时刷新的商品 下次刷新商品的时间戳 主要为红点服务
+}
+

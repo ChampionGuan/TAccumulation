@@ -1,0 +1,16 @@
+﻿---@class cfg.MainUIAction  excel名称:MainUIAction.xlsx
+---@field ActionConversation string 剧情-Conversation
+---@field ActionDrama int 剧情-剧本ID
+---@field ActionType string 行为枚举
+---@field ActionTypeDes int ##备注
+---@field ActorID int 看板娘ID
+---@field CDTime int 互动CD时间
+---@field Des int ##备注
+---@field ID int 唯一ID
+---@field Para1 int 参数1
+---@field Para2 int 参数2
+---@field Para3 int 参数3
+---@field Para4 int 参数4
+---@field Priority int 互动优先级
+---@field StateLimit int 状态ID
+---@field UnlockCondition int[] 解锁条件

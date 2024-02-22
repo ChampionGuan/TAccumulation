@@ -1,0 +1,11 @@
+﻿---@class cfg.DecorationInfo  excel名称:CollectionWall.xlsx
+---@field Des string ##风格部件名（仅供策划查看）
+---@field Group int 所属套组
+---@field ID int 道具表ID
+---@field Name string ##名称（仅供策划查看）
+---@field Resource string 风格显示
+---@field ResourceEX string 风格显示附属
+---@field Role int 所属角色
+---@field RoleDes string ##所属角色（仅供策划查看）
+---@field Show int 未获得时是否展示
+---@field Type int 风格部件

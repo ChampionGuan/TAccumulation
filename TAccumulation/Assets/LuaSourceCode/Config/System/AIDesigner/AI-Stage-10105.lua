@@ -1,0 +1,1 @@
+﻿local Tree = {tickInterval=0} return Tree

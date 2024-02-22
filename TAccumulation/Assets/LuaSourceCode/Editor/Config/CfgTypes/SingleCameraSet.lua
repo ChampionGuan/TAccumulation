@@ -1,0 +1,15 @@
+﻿---@class cfg.SingleCameraSet  excel名称:CameraSet.xlsx
+---@field CameraAngleDefault int 摄像机角度标准值
+---@field CameraAngleMax float 摄像机角度最大值
+---@field CameraAngleMin float 摄像机角度最小值
+---@field CameraFocusFactor float 相机焦点比例
+---@field CameraLenFactor float 相机距离系数值
+---@field CameraLenModify float 相机距离修正值
+---@field CameraRotate int 自由转动镜头
+---@field CameraVerticalFactor float 相机纵向修正
+---@field Fov float fov
+---@field ID int 唯一Key
+---@field Index int 顺序
+---@field Name string 名称
+---@field PitchAngle float 俯仰角度
+---@field TargetLen float 玩家怪物连线长度

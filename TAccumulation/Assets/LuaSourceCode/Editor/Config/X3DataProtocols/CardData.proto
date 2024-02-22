@@ -1,0 +1,91 @@
+syntax = "proto3";
+package X3Data;
+
+enum AwakenStatus{
+    UnAwake = 0;  //默认状态 未觉醒
+    Awaken  = 1;  //已经觉醒
+}
+
+//思念基础数据
+message CardData{
+    int64 Id             = 1;  // ID
+    int64 UId            = 2;  //用户ID
+    int32 Level          = 3;  // 等级
+    int32 Exp            = 4;  // 卡经验
+    int32 StarLevel      = 5;  // 卡星级
+    int32 PhaseLevel     = 6;  // 品阶
+    AwakenStatus Awaken  = 7;  // 觉醒状态
+    repeated int32 GemCores = 8;  // 装备芯核
+}
+
+message CardLocalImgInfo
+{
+	int64 Id             = 1;  // ID
+	int32 FaceVersion 	 = 2; //静态卡捏脸版本
+}
+
+//思念管理数据，全局唯一
+message CardManagedData{
+    int64 Id = 1;
+    map<int64, bool> LevelMaxCardMap = 2;       //记录等级已满的卡，CommonCondition用，key:思念ID value:true
+    map<int64, bool> StarLevelMaxCardMap = 3;   //记录星级已满的卡，CommonCondition用，key:思念ID value:true
+    map<int64, bool> PhaseLevelMaxCardMap = 4;  //记录品阶已满的卡，CommonCondition用，key:思念ID value:true
+    map<int64, bool> AwakeLevelMaxCardMap = 5;  //记录已突破的卡，CommonCondition用，key:思念ID value:true
+    int32 AllCardNum = 6;                       //记录当前版本所有可用的卡
+}
+
+//记录槽位对应的可用思念列表
+message CardPosDataList{
+    int64 PosId = 1;
+    repeated int64 CardList = 2;      //已获得的卡列表
+    repeated int64 CfgCardList = 3;   //配置中开放的卡列表
+}
+
+//记录男主对应的可用思念列表
+message CardManTypeDataList{
+    int64 ManId = 1;
+    repeated int64 CardList = 2;      //已获得的卡列表
+    repeated int64 CfgCardList = 3;   //配置中开放的卡列表
+}
+
+//思念初始属性，和用户无关，只和卡相关
+message CardInitAttrData{
+    int64 CardId = 1;
+    map<int32, int32> InitAttr = 2;  //初始属性
+}
+
+//思念属性数据，和思念一对一，思念基础数据变化后，进行属性预计算并存储在此结构中
+message CardAttrData{
+    int64 CardId = 1;
+    int32 UId = 2; //用户ID
+    map<int32, int32> BaseAttr = 3;  //基础属性
+    map<int32, int32> GemCoreAttr = 4;  //芯核加成属性
+    map<int32, int32> TalentAttr = 5;  //天赋加成属性
+    map<int32, int32> FinalAttr = 6; //最终属性
+}
+
+//套装配置数据，不同用户用同一套配置数据
+message CardSuitConfigData{
+    int64 SuitId = 1;
+    int32 SuitQuality = 2;
+    repeated int64 CardList = 3;
+}
+
+//单卡任务数据（只保存当前用户的数据）
+message CardQuestData{
+    int64 CardId = 1;   //卡ID
+    map<int32, int32> CardQuests = 2; //培养任务
+}
+
+//套装任务数据（只保存当前用户的数据）
+message CardSuitQuestData{
+    int64 SuitId = 1;   //套装ID
+    map<int32, int32> SuitQuests = 2; //培养任务
+}
+
+//他人的套装阶数
+message OtherSuitPhaseData{
+    int64 SuitId = 1;
+    int64 Uid = 2;
+    int32 SuitPhase = 3;
+}

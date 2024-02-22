@@ -1,0 +1,11 @@
+﻿---@class cfg.UFOCatcherEncourageManTalk  excel名称:UFOCatcher.xlsx
+---@field ConditionDes string ##条件类型
+---@field ConditionPara0 int 条件参数0
+---@field ConditionPara1 int 条件参数1
+---@field ConditionType int 条件类型
+---@field Conversation string 满足条件后播放的剧情
+---@field Des string ##备注
+---@field EncourageManTalkGroupID int 加油后男主反馈对话组ID
+---@field ID int ID
+---@field Man string ##男主
+---@field Priority int 优先级（数字越大优先级越高）

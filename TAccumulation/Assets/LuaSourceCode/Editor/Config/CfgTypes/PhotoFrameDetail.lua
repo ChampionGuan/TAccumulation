@@ -1,0 +1,11 @@
+﻿---@class cfg.PhotoFrameDetail  excel名称:Photo.xlsx
+---@field DefaultZoom int 照片默认缩放比
+---@field Desc string ##说明
+---@field FrameID int 所属边框ID
+---@field FramePos Vector2 外框默认位置
+---@field FrameRot float 外框默认旋转
+---@field FrameScale Vector2 外框大小
+---@field ID int 唯一ID
+---@field Number int 照片编号
+---@field Order int 照片层级
+---@field Pos Vector2 照片默认位置

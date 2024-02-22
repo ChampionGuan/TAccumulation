@@ -1,0 +1,14 @@
+﻿---@class cfg.AchievementType  excel名称:Achievement.xlsx
+---@field ConditionType int 条件判定
+---@field CounterType int 任务ID
+---@field ID int 唯一ID
+---@field Name string #描述
+---@field OverflowID int 溢出ID
+---@field Param1 int 参数1
+---@field Param2 int 参数2
+---@field Param3 int 参数3
+---@field Param4 int 参数4
+---@field Param5 int 参数5
+---@field Param6 int[] 参数6
+---@field Param7 int[] 参数7
+---@field Remark string ##备注

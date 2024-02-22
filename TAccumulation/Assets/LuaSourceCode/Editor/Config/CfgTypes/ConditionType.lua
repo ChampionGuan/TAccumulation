@@ -1,0 +1,17 @@
+﻿---@class cfg.ConditionType  excel名称:CommonCondition.xlsx
+---@field Bll string 程序检查函数
+---@field ConstString string 常量服务器用
+---@field DefaultPara0 int 缺省时默认参数0
+---@field DefaultPara1 int 缺省时默认参数1
+---@field DefaultPara2 int 缺省时默认参数2
+---@field DefaultPara3 int 缺省时默认参数3
+---@field DefaultPara4 int 缺省时默认参数4
+---@field Desc string #描述-注意：描述中的参数从1开始，字段名是从0开始的
+---@field Id int 枚举ID
+---@field MarkType string #分类必填
+---@field ParaMark string ##参数备注
+---@field ParaTypeMark string ##参数类型说明
+---@field SystemEnum int 系统枚举
+---@field Type int 判定系统分类
+---@field TypeDes string #分类
+---@field TypeID string ##分类ID

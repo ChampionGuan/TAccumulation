@@ -1,0 +1,8 @@
+﻿syntax = "proto3";
+package X3Data;
+
+
+message Activity {
+  int64 activityId = 1;
+  bool active = 2;
+}

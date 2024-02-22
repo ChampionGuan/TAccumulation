@@ -1,0 +1,17 @@
+﻿---@class cfg.DailyDateStoryCollect  excel名称:DailyDateStoryCollect.xlsx
+---@field Asset int 关联剧本ID
+---@field EndConversation int 回放结束ConversationID
+---@field EndNodeID int 回放结束NodeID
+---@field GameEntryID int 游戏ID
+---@field GameType int 游戏类型
+---@field ID int ID
+---@field Image string 图标
+---@field ManType int 男主ID
+---@field Name int 名字&
+---@field PlayStartConversation int 回放起始ConversationID
+---@field PlayStartNodeID int 回放起始NodeID
+---@field Reward cfg.s3int[] 激活奖励
+---@field Scene string 回放时剧情场景
+---@field StartConversation int 激活收集起始ConversationID
+---@field StartNodeID int 激活收集起始NodeID
+---@field UnlockDesc int 剧情段未激活提示&

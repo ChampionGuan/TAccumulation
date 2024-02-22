@@ -1,0 +1,12 @@
+syntax = "proto3";
+package X3Data;
+
+message LovePointTimeRecord {
+    int64  PrimaryKey    = 1; //键值
+    int64 Time      = 2;  // 时间
+}
+
+message LovePointRole {
+    int64 PrimaryKey = 1;//键值
+    int32 RoleID = 2; //当前选择男主id
+}

@@ -1,0 +1,7 @@
+﻿syntax = "proto3";
+package X3Data;
+
+message ActivityGrowUpData {
+  int64 Id = 1;
+  repeated int32 RewardedList = 2;  //已领取的奖励的ID,见NewPlayerGrowUp配置ID
+}

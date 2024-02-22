@@ -1,0 +1,13 @@
+﻿---@class cfg.RadioInfo  excel名称:Radio.xlsx
+---@field Background string 背景图
+---@field CardID int 唯一ID
+---@field CardShowTime cfg.s2int 高光时刻开始节点=结束节点
+---@field Description int 简介&
+---@field IOSIcon string iOS用直角图标
+---@field Name int 名称&
+---@field RadioCost cfg.s3int 广播剧解锁消耗
+---@field RadioName string 广播剧名称
+---@field RadioVoice string 广播剧文件名
+---@field Reward cfg.s3int[] 广播剧阅读奖励
+---@field RewardTime int 领奖阅读时长单位：秒
+---@field Slogen string 喊话&

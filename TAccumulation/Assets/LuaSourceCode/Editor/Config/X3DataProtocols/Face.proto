@@ -1,0 +1,8 @@
+syntax = "proto3";
+package X3Data;
+
+message PlayerVoice
+{
+	int64 Id 				= 1;
+	map<int32, int32> Voice = 2;
+}

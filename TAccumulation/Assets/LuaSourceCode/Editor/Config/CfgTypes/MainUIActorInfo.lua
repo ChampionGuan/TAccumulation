@@ -1,0 +1,15 @@
+﻿---@class cfg.MainUIActorInfo  excel名称:MainUI.xlsx
+---@field AssetID int 资产ID
+---@field ChangeClothEventID int 换装后换成新衣服时的展示剧情对应的特殊事件ID
+---@field ClothChoice string 男主服装种类及其开启条件及随机权重
+---@field House string 秘密花园节点名称
+---@field ID int 唯一ID
+---@field InteractIntervalCD int 男主不理人状态持续时长（秒）
+---@field InteractIntervalCount int 男主互动动作次数限定
+---@field InteractIntervalLimit int 男主互动动作时限（秒）
+---@field LeaveGiftStateID int 挂机礼盒状态ID
+---@field ManType int 角色ID（暂时保留）
+---@field Name string ##看板娘名字For策划
+---@field PartGroupId int 男主部位判定组ID
+---@field ReFocusMainCD int 距离上次播放【返回主界面剧情】限定时长（秒）
+---@field SCoreType int 男主S-Core的ID

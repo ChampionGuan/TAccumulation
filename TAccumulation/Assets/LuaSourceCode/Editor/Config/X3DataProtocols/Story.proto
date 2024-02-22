@@ -1,0 +1,92 @@
+syntax = "proto3";
+package X3Data;
+
+//解锁状态类型
+enum StoryStatus {
+    Lock = 0; //未解锁
+    Normal = 1; //已解锁
+}
+enum StoryReadState {
+    NoRead = 0;//未读 
+    HaveRead = 1;//已读
+}
+
+enum StoryType{
+    StoryTypeNone = 0;
+    Anecdote = 1; //逸闻
+    Legend = 2; //传说
+}
+
+// 小传状态
+enum StoryStateType {
+    StoryStateTypeNone   = 0;  // 无
+    StoryStateTypeRead = 1; //进行过阅读
+    StoryStateTypeFinish = 2;  // 完成
+    StoryStateTypeReward = 3;  // 已经领取
+}
+
+//男主对应逸闻数据
+message AnecdoteList {
+    int64 PrimaryKey = 1;//RoleID
+    map<int64, AnecdoteItem>  AnecdoteData = 2;//男主拥有逸闻数据
+    int32 LastStoryID = 3; //男主最后一次看的逸闻id
+}
+
+//单个逸闻数据
+message AnecdoteItem {
+    int64 PrimaryKey  = 1; //AnecdoteID
+    StoryStatus State = 2;  //解锁状态
+    map<int64, AnecdoteSection>  SectionData = 3; //小节数据
+    int32 LastReadSection = 4; //最后一次读的小节
+    int32 LastReadSectionNum = 5; //最后一次读取小节 的段落
+    StoryStateType StateType = 6; //小传完本状态
+    bool isNew = 7; //是否新解锁逸闻
+}
+
+//单个小节数据
+message AnecdoteSection {
+    int64  PrimaryKey  = 1;//SectionID
+    StoryStatus State  = 2;  // 解锁状态
+    repeated AnecdoteContent ContentData = 3; //小节所有内容数据
+    int32 PageIndex = 4;//页码
+    int32 LastNum = 5; //上次阅读标记
+    int32 PageNum = 6; //总页数
+    bool isNew = 7; //是否新解锁小节
+    StoryReadState ReadState = 8; //上一节已读状态
+    int32 CanvasSizeX = 9;
+    int32 CanvasSizeY = 10;
+}
+
+//单行数据
+message AnecdoteContent {
+    int64 PrimaryKey = 1; //SectionID * 100 + Num
+    int32 SectionID = 2; //SectionID
+    int32 Num = 3; //文本序号
+    string Content = 4; //显示内容
+    string NoRichContent = 5; //剔除富文本内容
+}
+
+//男主对应传说数据
+message LegendList {
+    int64 PrimaryKey = 1;//RoleID
+    map<int64, LegendItem>  Legend = 2;//男主拥有传说数据
+    int32 LastStoryID = 3; //男主最后一次看的传说id
+}
+
+//单个传说数据
+message LegendItem {
+    int64 PrimaryKey  = 1; //LegendID
+    StoryStatus State = 2;  //解锁状态
+    map<int64, LegendSection>  SectionData = 3; //小节数据
+    int32 LastReadSection = 4; //最后一次读的小节
+    StoryStateType StateType = 5; //传说完本状态
+    bool isNew = 6; //是否新解锁传说
+}
+
+//单个小节数据
+message LegendSection {
+    int64  PrimaryKey  = 1;//SectionID
+    StoryStatus State  = 2;  // 解锁状态
+    bool isNew = 3; //是否新解锁小节
+    StoryReadState ReadState = 4; //上一节已读状态
+}

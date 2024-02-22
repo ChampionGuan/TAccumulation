@@ -1,0 +1,15 @@
+﻿---@class cfg.JengaQuestion  excel名称:Jenga.xlsx
+---@field ActorType int 该问题会在哪一方失败时出现
+---@field AnswerType int 问题类型
+---@field AnswerWeight int[] 此题出现的权重（根据出现次数）
+---@field ConversationName string 剧情Conversation名
+---@field DifficultyType int[] 该问题会在哪些难度出现
+---@field Index int 唯一Key
+---@field ManQuestionType int 男主回答类型
+---@field MaxTimes int 最大出现次数
+---@field PlayerAnswer1 int &玩家回答选项1
+---@field PlayerAnswer2 int &玩家回答选项2
+---@field PlayerAnswer3 int &玩家回答选项3
+---@field PlayerQuestionType int 玩家回答类型
+---@field QuestionContent int &问题内容
+---@field ShowCondition int 满足此条件时才参与挑选随机

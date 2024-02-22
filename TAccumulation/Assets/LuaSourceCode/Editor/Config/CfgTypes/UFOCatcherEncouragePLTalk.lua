@@ -1,0 +1,11 @@
+﻿---@class cfg.UFOCatcherEncouragePLTalk  excel名称:UFOCatcher.xlsx
+---@field ComposeGroupID int ##气泡组合部位组合ID
+---@field Conversation string 满足条件后播放的剧情
+---@field Des string ##备注
+---@field EncouragePLTalkGroupID int 加油点击气泡组ID
+---@field ID int 唯一ID
+---@field PartName string ##部位名称
+---@field PartType int 点击部位Type
+---@field Probability int 显示概率（万分比）
+---@field Text int 气泡文字&
+---@field Weight int 权重

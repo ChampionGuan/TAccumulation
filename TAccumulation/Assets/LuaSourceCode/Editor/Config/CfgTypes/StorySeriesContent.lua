@@ -1,0 +1,14 @@
+﻿---@class cfg.StorySeriesContent  excel名称:StorySeries.xlsx
+---@field Condition int 额外条件
+---@field Content int 内容描述&
+---@field FinishJump int 已完成跳转
+---@field FinishJumpParas int[] 跳转参数
+---@field GetJump int 已获得未完成跳转
+---@field GetJumpParas int[] 跳转参数
+---@field GetTips int 未完成提示&
+---@field ID int 唯一ID
+---@field ItemSource int[] 获取途径
+---@field LinkTo int 关联ID
+---@field LovePointLevel int 牵绊度等级
+---@field PreID int 前置事件ID
+---@field Type int 类型ID关联StorySeriesType分表1短信 2电话 3朋友圈 4出游 5约会 6主界面事件 7藏品

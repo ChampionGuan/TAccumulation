@@ -1,0 +1,11 @@
+﻿---@class cfg.Jump  excel名称:Jump.xlsx
+---@field ID int 唯一ID
+---@field InterfaceName string 界面名称
+---@field NotOpenDescription int 功能未开启提示&
+---@field Parameter1 int 参数1
+---@field Parameter2 int 参数2
+---@field Parameter3 int 参数3
+---@field RemarkDesc int 策划备注简要描述#
+---@field RemarkUser int 策划备注调用系统#
+---@field SystemUnlockID int 功能解锁ID
+---@field Type int 跳转类型

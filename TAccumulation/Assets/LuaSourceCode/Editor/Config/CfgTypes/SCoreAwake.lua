@@ -1,0 +1,11 @@
+﻿---@class cfg.SCoreAwake  excel名称:SCore.xlsx
+---@field AddCritVal int 增加暴击率
+---@field AddMaxHP int 增加生命值
+---@field AddPhyAtk int 增加物理攻击
+---@field AddPhyDef int 增加物理防御
+---@field AttrAddList cfg.s2int[] 其他属性加成
+---@field AwakeNeedLv int 觉醒开启的等级
+---@field AwakeSkinID int 觉醒皮肤ID
+---@field ID int 唯一ID
+---@field NeedGold int 觉醒需要消耗的金币数量
+---@field NeedItem cfg.s3int[] 提升到下一阶需要消耗的道具

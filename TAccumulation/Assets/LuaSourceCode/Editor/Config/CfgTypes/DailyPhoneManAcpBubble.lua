@@ -1,0 +1,12 @@
+﻿---@class cfg.DailyPhoneManAcpBubble  excel名称:DailyPhoneBubble.xlsx
+---@field BubbleGroupID int 气泡组ID
+---@field BubbleWeight int 气泡权重
+---@field BubbleWord int 气泡文本&
+---@field ConversationNameShow string Conversation名
+---@field ID int ID
+---@field NodeIDShow int 节点ID
+---@field Num string ##编号用
+---@field RoutineName string ##日程名
+---@field SemanticGroupID int 语义组
+---@field SoundID string ##Sound名
+---@field SoundTips string ##特殊音效

@@ -1,0 +1,22 @@
+﻿---@class cfg.PhotoPlace  excel名称:Photo.xlsx
+---@field CameraSetID int 相机参数
+---@field CameraXAxisValue float Freelook相机AxisControl X值
+---@field CameraYAxisValue float Freelook相机AxisControl Y值
+---@field DepthOfField float[] 景深参数
+---@field Desc string ##策划用备注
+---@field ExcludeAction int[] 互斥动作
+---@field ExcludeFashion int[] 互斥服装（具体ID）
+---@field ExcludeFashionPart int[] 互斥服装部位
+---@field GroupPhotoPos Vector3 双人-男主初始位置
+---@field GroupPhotoRot Vector3 双人-男主初始朝向
+---@field ID int 唯一ID
+---@field Icon string 拍照点icon
+---@field MoveRangeApex1Pos Vector3 人物可移动范围-顶点1坐标
+---@field MoveRangeApex2Pos Vector3 人物可移动范围-顶点2坐标
+---@field MoveRangeApex3Pos Vector3 人物可移动范围-顶点3坐标
+---@field MoveRangeApex4Pos Vector3 人物可移动范围-顶点4坐标
+---@field Name int 拍照点名称&
+---@field PlayerPos Vector3 双人-女主初始位置
+---@field PlayerRot Vector3 双人-女主初始朝向
+---@field SingleMalePos Vector3 单人-初始位置
+---@field SingleMaleRot Vector3 单人-初始朝向

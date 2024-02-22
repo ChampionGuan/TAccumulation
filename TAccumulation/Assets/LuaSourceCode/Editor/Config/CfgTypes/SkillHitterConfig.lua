@@ -1,0 +1,15 @@
+﻿---@class cfg.SkillHitterConfig  excel名称:BattleSkill.xlsx
+---@field Count int 作用次数
+---@field DamageBoxIDs int[] 技能伤害包围盒编号
+---@field DamageSoundEventName string Hitter伤害音效
+---@field FxID int 特效名称
+---@field ID int 技能召唤物编号
+---@field Interval Fix 作用间隔
+---@field IsFollow int 是否跟随
+---@field LifeTime Fix 生存时间
+---@field MountType int 挂载类型
+---@field Name string #名称
+---@field Offset FVector3 偏移量
+---@field SoundEventName string Hitter自身音效
+---@field StartFxID int 首次作用释放特效
+---@field StartInterval Fix 首次作用间隔

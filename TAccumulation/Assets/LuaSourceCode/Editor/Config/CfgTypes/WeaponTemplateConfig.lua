@@ -1,0 +1,11 @@
+﻿---@class cfg.WeaponTemplateConfig  excel名称:Weapon.xlsx
+---@field AnimName string 武器动画
+---@field AvatarEffectName string 武器特效名称
+---@field Desc string #描述
+---@field DissolutionEffectName string 武器溶解特效
+---@field EffectSlot string 武器特效挂点
+---@field HostSlot string 武器宿主挂点
+---@field ID int ID
+---@field Name string 武器名称
+---@field PosOffset Vector3 位置偏移
+---@field RotOffset Vector3 朝向偏移

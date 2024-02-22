@@ -1,0 +1,9 @@
+syntax = "proto3";
+package X3Data;
+
+message ActivityDialogue {
+  int64 ActivityId = 1;
+  int32 MaleID = 2;
+  repeated int32 UnlockIDs = 3;
+  repeated int32 FinishIDs = 4;
+}

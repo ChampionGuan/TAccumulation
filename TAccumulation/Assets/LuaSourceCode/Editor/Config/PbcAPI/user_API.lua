@@ -1,0 +1,87 @@
+﻿--警告 文件内容通过菜单修改  请勿更改--
+
+---@class pbcmessage.GetUserInfoReply 
+---@field TargetUid number 
+---@field User pbcmessage.SnsCacheData 
+local  GetUserInfoReply  = {}
+---@class pbcmessage.GetUserInfoRequest @    rpc GetUserInfo(GetUserInfoRequest) returns (GetUserInfoReply) {}                     获取userInfo
+---@field TargetUid number 
+local  GetUserInfoRequest  = {}
+---@class pbcmessage.SyncUserTotalDataReply 
+---@field Uid number @ 角色ID
+---@field Base pbcmessage.ClientBase @ 玩家base 比如等级 经验等
+---@field Coin pbcmessage.CoinClient @ 玩家的货币 包含钻石 金币等
+---@field Item pbcmessage.ItemData @ 玩家物品信息
+---@field SCore pbcmessage.SCoreData @ sCore记录
+---@field Card pbcmessage.CardData @ 卡片记录
+---@field Formation pbcmessage.FormationData @ 编队信息
+---@field Role pbcmessage.RoleBase @ 男友数据
+---@field MainUI pbcmessage.MainUIData @ 主界面
+---@field Record pbcmessage.RecordData @ 玩家数据记录
+---@field Stage pbcmessage.StageBase @ 玩家关卡信息
+---@field Contact pbcmessage.ContactData @ 联系人
+---@field Message pbcmessage.MessageData @ 信息
+---@field MailList pbcmessage.Mail[] @ 邮件列表
+---@field Call pbcmessage.CallData @ 电话
+---@field Moment pbcmessage.MomentData @ 朋友圈
+---@field Article pbcmessage.ArticleData @ 公众号
+---@field Information pbcmessage.InformationData @ 情报系统
+---@field Frame pbcmessage.FrameData @ 头像框
+---@field Title pbcmessage.TitleData @ 称号
+---@field Personal pbcmessage.PersonalData @ 个人信息
+---@field Unlock pbcmessage.UnlockData @ 系统解锁
+---@field  DungeonRecords       table<number,pbcmessage.DungeonRecord> @ 记录当天最近一次男主的战斗记录 key：男主ID
+---@field Activity pbcmessage.ActivityData @ 活动
+---@field Charge pbcmessage.ChargeData @ 充值相关
+---@field Guide pbcmessage.GuideData @ 新手引导
+---@field Quest pbcmessage.QuestClientData @ 任务
+---@field Active pbcmessage.ActiveData @ 活跃
+---@field Trial pbcmessage.TrialData @ 试炼场
+---@field Questionnaire pbcmessage.QuestionnaireData @ 问卷
+---@field Fashion pbcmessage.FashionData @ 皮肤
+---@field SoulTrial pbcmessage.SoulTrialData @ 心灵试炼
+---@field  SoulPass                     table<number,number> @ 心灵试炼通关状态
+---@field Achievement pbcmessage.AchievementData @ 成就信息
+---@field SignIn pbcmessage.SignInData @ 签到记录
+---@field MonthCard pbcmessage.MonthCardData @ 月卡记录
+---@field OpenTime number @ 服务器开服时间
+---@field ChildSwitch number @ 防沉迷服务器开关
+---@field SpecialDateBrief pbcmessage.SpecialDateBriefData @ 特殊约会简易数据
+---@field Photos pbcmessage.PhotoData @ 照片相册信息
+---@field Weapon pbcmessage.WeaponData @ 武器数据
+---@field FileDownloadPreUrl string @ 文件下载前缀
+---@field Intelligences pbcmessage.IntelligenceData @ 情报数据
+---@field BroadcastingPlay pbcmessage.BroadcastingPlayData @ 广播剧
+---@field GachaData pbcmessage.GachaData @ 抽卡数据
+---@field MiaoGacha pbcmessage.MiaoGachaData @ 喵喵牌抽卡数据
+---@field BGM pbcmessage.BGMData @ 背景音乐
+---@field InterActive pbcmessage.InterActiveData @ 互动数据
+---@field PlayerTag pbcmessage.PlayerTagData @ 个性化标签数据
+---@field KneadFace pbcmessage.KneadFaceData @ 捏脸数据
+---@field Custom pbcmessage.CustomData @ 自定义数据块
+---@field GemCore pbcmessage.GemCoreData @ 芯核
+---@field  GamePlays    table<number,pbcmessage.GamePlayGroupToClient> @ 玩法数据 key:GamePlayEnterType
+---@field RedPoint pbcmessage.RedPointGroup @ 红点信息
+---@field Story pbcmessage.StoryData @ 小传
+---@field DailyConfide pbcmessage.DailyConfideData @ 连麦
+---@field Collection pbcmessage.CollectionData @ 藏品
+---@field Decoration pbcmessage.DecorationData @ 装饰
+---@field Scene pbcmessage.MainUISceneData @ 主界面场景数据
+---@field Shop pbcmessage.ShopData @ 商店数据
+---@field BattlePass pbcmessage.BattlePassSeason @ 战令数据
+---@field Accompany pbcmessage.AccompanyData @ 陪伴
+---@field SystemDisable number[] @ 一键关闭自定义功能
+---@field EasterEgg pbcmessage.EasterEggData @ 彩蛋
+---@field ActConfigs pbcmessage.ActivityCMSConfig[] @ 活动配置数据
+---@field ActTypeConfigs pbcmessage.ActivityTypeCMSConfig[] @ 活动Banner配置数据
+---@field Share pbcmessage.ShareData @ 分享
+---@field NewbieData pbcmessage.NewbieData @ 新手成长任务
+---@field DailyRoutine pbcmessage.DailyRoutineData @ 日常作息
+---@field DatePlanData pbcmessage.DatePlanData @ 约会计划
+---@field HangUpData pbcmessage.HangUpData @ 挂机
+---@field AsmrData pbcmessage.AsmrData @ asmr数据
+---@field HunterContest pbcmessage.HunterContestData @ 大螺旋
+---@field PlayerReturn pbcmessage.ReturnData @ 回流
+local  SyncUserTotalDataReply  = {}
+---@class pbcmessage.SyncUserTotalDataRequest 
+local  SyncUserTotalDataRequest  = {}

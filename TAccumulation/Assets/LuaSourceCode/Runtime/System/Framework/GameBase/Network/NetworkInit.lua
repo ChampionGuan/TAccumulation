@@ -1,0 +1,1 @@
+﻿require("Runtime.System.Framework.GameBase.Network.HttpRequest")

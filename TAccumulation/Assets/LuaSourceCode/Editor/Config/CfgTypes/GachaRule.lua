@@ -1,0 +1,13 @@
+﻿---@class cfg.GachaRule  excel名称:Gacha.xlsx
+---@field CountID int 保底计数ID
+---@field Drop cfg.s2int[] 掉落
+---@field DropVerify int[] 掉落物稀有度验证
+---@field GachaID int ##所属卡池
+---@field ID int 规则ID
+---@field Param1 int 参数1
+---@field Param2 int 参数2
+---@field Priority int 规则优先级
+---@field RuleShow int 动态保底显示
+---@field RuleType int 规则类型
+---@field RuleTypeGroup int 规则类型组
+---@field Txt string ##规则说明

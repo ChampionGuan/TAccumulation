@@ -1,0 +1,11 @@
+﻿---@class cfg.PhotoFrame  excel名称:Photo.xlsx
+---@field ID int 边框ID
+---@field Icon string 边框icon
+---@field IsBasePackage int 是否进A包
+---@field IsDefault int 是否为默认
+---@field ItemID int 边框激活道具
+---@field Model int 所属模式
+---@field Name string ##说明
+---@field Resource string 资源
+---@field Role int 所属角色
+---@field Type int 边框类型

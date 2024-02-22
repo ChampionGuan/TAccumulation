@@ -1,0 +1,16 @@
+﻿---@class cfg.CollectionInfo  excel名称:CollectionWall.xlsx
+---@field Gallery int 图鉴（所属角色）
+---@field GiveWords int 赠送附言&
+---@field ID int 道具表ID
+---@field Layer int 显示层
+---@field Miss int 赠送附言称呼&
+---@field Name string ##名称（仅供策划查看）
+---@field Order int 显示顺序
+---@field Overlap int 可被重叠
+---@field Resource string 藏品显示
+---@field Revolve int 可旋转
+---@field Role int 所属角色
+---@field Sign int 赠送附言署名&
+---@field SkipExport int 本行不导表
+---@field Source int 来源系统
+---@field Type int 藏品类型

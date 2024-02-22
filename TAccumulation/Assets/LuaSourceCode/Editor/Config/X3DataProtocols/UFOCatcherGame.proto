@@ -1,0 +1,11 @@
+syntax = "proto3";
+package X3Data;
+
+//娃娃机玩法内数据，慢慢从BLL迁移过来
+message UFOCatcherGame
+{
+  int64 Id = 1;                         //DifficultyId
+  int32 ChangePlayer = 2;               //换人发起方 0:未发生拒绝换人, 1:player, 2:AI
+  bool ChangeRefused = 3;               //换人拒绝
+  map<int32, int32> RefusedCount = 4;   //拒绝换人次数
+}

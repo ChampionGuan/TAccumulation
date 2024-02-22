@@ -1,0 +1,12 @@
+﻿---@class cfg.BattleEditorConfig  excel名称:BattleEditor.xlsx
+---@field DummiesID int 带挂点角色ID
+---@field ID int 角色编号
+---@field IsSuitModel boolean 是否套装
+---@field ModelName string 模型名称
+---@field RoleID int 角色索引
+---@field RoleName string 角色名称
+---@field RoleType int 角色类型
+---@field SuitKey string 套装名称
+---@field TimelinePath string Timeline索引
+---@field WeaponID int 武器索引
+---@field WeaponsID int[] 武器组索引

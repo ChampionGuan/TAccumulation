@@ -1,0 +1,12 @@
+﻿---@class cfg.UFOCatcherSPAction  excel名称:UFOCatcher.xlsx
+---@field BuffDes string ##注释
+---@field BuffDes2 string ##注释
+---@field BuffFucPara0 int[] Buff行为参数0
+---@field BuffFucPara1 int[] Buff行为参数1
+---@field BuffFucType int Buff特殊行为类型
+---@field BuffFucTypeDes string ##Buff特殊行为类型
+---@field Conversation string 获得buff后的对话
+---@field Des string ##备注
+---@field EffectStringKey string[] 娃娃机上绑定的特效组StringKey名
+---@field ID int ID
+---@field StopBD int 播放剧情时是否暂停BD

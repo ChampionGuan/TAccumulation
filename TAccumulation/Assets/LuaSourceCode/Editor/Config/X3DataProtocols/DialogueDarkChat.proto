@@ -1,0 +1,31 @@
+syntax = "proto3";
+package X3Data;
+
+enum DialogueDarkChatType {
+  DialogueDarkChatTypeNone = 0;
+  DialogueDarkChatTypeShowLoading = 1;
+  DialogueDarkChatTypeShowChatMsg = 2;
+  DialogueDarkChatTypeShowSystemTips = 3;
+  DialogueDarkChatTypeShowImgWidth = 4;
+  DialogueDarkChatTypeShowImgHigh = 5;
+  DialogueDarkChatTypeCloseComp = 6;
+}
+
+enum DialogueDarkChatSubTypeChat {
+  DialogueDarkChatSubTypeChatNone = 0;
+  DialogueDarkChatSubTypeChatOther = 1;
+  DialogueDarkChatSubTypeChatSelf = 2;
+  DialogueDarkChatSubTypeChatAudioShow = 3;
+  DialogueDarkChatSubTypeChatAudioPlaySingle = 4;
+  DialogueDarkChatSubTypeChatAudioPlayDouble = 5;
+  DialogueDarkChatSubTypeChatStopAudio = 6;
+}
+
+enum DialogueDarkChatCompType {
+  DialogueDarkChatCompTypeAll = 0;
+  DialogueDarkChatCompTypeLoading = 1;
+  DialogueDarkChatCompTypeChat = 2;
+  DialogueDarkChatCompTypeSystemTips = 3;
+  DialogueDarkChatCompTypeImgWidth = 4;
+  DialogueDarkChatCompTypeImgHigh = 5;
+}

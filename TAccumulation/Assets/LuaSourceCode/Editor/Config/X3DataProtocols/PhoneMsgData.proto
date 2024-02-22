@@ -1,0 +1,140 @@
+syntax = "proto3";
+package X3Data;
+import "PhoneContactData.proto";
+
+enum PhoneMsgConversationStateType
+{
+	Begin			= 0;	//开始节点
+	Reading			= 1;	//阅读
+	Input			= 2;	//输入
+	Execute			= 3;	//逻辑执行
+	FakeFinish		= 4;	//撤回消息内容结束
+	Finish			= 5;	//结束
+}
+
+enum PhoneMsgUIType
+{
+	Msg 			= 0; //消息
+    Line			= 1; //分割线
+    ManPokePlayer 	= 2; //戳一戳
+    Tips 			= 3; //系统提示
+}
+
+enum PhoneMsgConversationRewardType
+{
+	None		= 0;
+	UnRewarded	= 1;
+	Rewarded	= 2;
+}
+
+enum PhoneMsgConversationReadType
+{
+	Unread	= 0;
+	Read	= 1;
+}
+
+message NudgeInfo
+{
+	int64 Uid		= 1;	// 对应conversation唯一id
+	int32 Num		= 2;	// 戳一戳次数
+    int64 LastTime	= 3;	// 戳一戳上次时间
+}
+
+// ExtraInfo 短消息附加数据
+message PhoneMsgExtraInfo 
+{
+	int64 MsgId 			= 1;
+    ContactNudge NudgeSign 	= 2;
+    int32 BubbleID         	= 3;
+    PhoneContactHead HeadIcon    = 4;
+}
+
+message PhoneMsgConversationData
+{
+	int64 Uid											= 1;	//唯一Id，主key
+	int64 CfgId 										= 2;
+	int32 Type 											= 3;
+	PhoneMsgConversationStateType State 				= 4;
+	PhoneMsgConversationRewardType RewardState 			= 5;
+	PhoneMsgConversationReadType ReadState				= 6;
+	int64 NextCfgId										= 7;
+	float FireTime										= 8;
+}
+
+message PhoneMsgUIItem
+{
+	int64 idx 						= 1;
+	int64 MsgGuid 					= 2;
+	PhoneMsgConversationData info	= 3;
+	string Verb						= 4;
+	string Suffix 					= 5;
+}
+
+message PhoneMsgSimulatingData
+{
+	int64 ContactId 							= 1;
+	int64 GUID 									= 2;
+	int64 CfgId 								= 3;
+	repeated int64 History						= 4;
+	map<int64, bool> RewardMap					= 5;
+	map<int64, bool> RedPacketMap				= 6;
+	map<int64, float> RecallMap					= 7;
+	repeated int64 UnreadList					= 8;
+	bool IsWaitingForFinish						= 9;
+	int64 LastReadId							= 10;
+}
+
+message PhoneMsgProgressData
+{
+	int64 ContactId 	= 1;
+	int64 GUID 			= 2;
+	int64 LastConvId 	= 3;
+	int64 LastReadId 	= 4;
+}
+
+message PhoneMsgDetailData 
+{
+    int64 GUID									= 1;  // guid
+    int32 ID                     				= 2;
+    int64 CreateTime                  			= 3;  // 消息创建时间
+    int32 ContactID                   			= 4;
+    int64 LastRefreshTime             			= 5;   // 上次更新时间
+    bool IsFinished                   			= 6;   // 状态 0激活 1结束
+    repeated int32 ChoiceList         			= 7;   // 选择
+    map<int32, NudgeInfo> NudgeNumMap 			= 8;  // 戳一戳信息 key：conversationID value:戳一戳信息
+	PhoneMsgExtraInfo Extra                   	= 9;
+}
+
+message PhoneMsgContactData
+{
+	int64 ContactId										= 1;
+    repeated int32 History 								= 2;  // 消息聊天记录 		
+	int32 CurMsgID 										= 3;  // 当前的短信ID 所有类型短信都会记录
+	int32 LastMsgID										= 4;  // 上一条已完成的短信ID 所有类型短信都会记录
+    map<int32, bool> AutoActiveMsgMap  					= 5;  // 激活信息列表 k:message id v：是否发送过
+    map<int32, bool> TopicMap  							= 6;  // 激活信息列表 k:message id v：是否发送过
+	int32 NewTopicCount    								= 7;  // 新话题数量
+	bool ShowTopicRed    								= 8;  // 是否显示新话题红点
+	int32 LastRefreshTime    							= 9;  // 最近刷新时间
+    map<int32, bool> FinishMsgRedPoint        			= 10; // 已经完成短信红点
+}
+
+message PhoneMsgConditionRecord
+{
+	int64 uid				= 1;
+	map<int32, bool> Record	= 2;
+}
+
+message PhoneMsgData
+{
+	int64 Uid 									= 1;
+    int64 LastRefreshTime                		= 2;  // 上次刷新时间
+    int32 ChatAllNum                     		= 3;  // 总计发送闲聊次数
+    int32 GuidGen                        		= 4;
+    map<int32, bool> CollectStickerMap   		= 5;  // 收藏表情列表 k: 表情id
+    map<string, int32> CacheIDMap        		= 6;  // 缓存图片对应的 cacheID
+    map<int32, bool> ActiveMessageMap    		= 7;  // 激活信息列表 k:message id v：是否发送过
+    map<int64, int32> MsgGUIDMap	    		= 8;  // msgid对应guid的map
+    map<int32, bool> RewardMap        			= 9; // 奖励列表 key rewardID val 是否领奖
+    map<int32, bool> RedPacket        			= 10; // 红包领取
+}	

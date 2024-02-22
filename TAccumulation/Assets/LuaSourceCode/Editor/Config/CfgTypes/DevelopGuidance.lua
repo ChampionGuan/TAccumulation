@@ -1,0 +1,13 @@
+﻿---@class cfg.DevelopGuidance  excel名称:DevelopGuidance.xlsx
+---@field CardLevel int 羁绊卡平均等级
+---@field CardPhase int 羁绊卡目标等阶
+---@field ID int 唯一ID
+---@field LevelDownLimit int 等级上限
+---@field LevelUpperLimit int 等级下限
+---@field LovePoint int 男主好感度等级
+---@field PlayerLevel int 警署等级
+---@field Remark int 策划备注#
+---@field SCoreRare int 誓约恋人目标稀有度
+---@field SCoreStar int 誓约恋人星级
+---@field ScoreAwake int 誓约恋人觉醒阶段
+---@field ScoreLevel int 誓约恋人目标等级

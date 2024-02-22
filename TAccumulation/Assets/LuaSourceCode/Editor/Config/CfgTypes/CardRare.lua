@@ -1,0 +1,13 @@
+﻿---@class cfg.CardRare  excel名称:Card.xlsx
+---@field AttrAddList cfg.s2int[] 其他属性加成
+---@field BreakReward cfg.s3int[] 分解产物
+---@field CollectAddIsShow int 收集加成说明中是否显示该档位
+---@field ComposeMoneyCost int 合成需要金币
+---@field Desc string #描述
+---@field FragmentNum int 合成需要碎片
+---@field Id int 类型ID
+---@field MaxStarNum int 羁绊卡星级上限
+---@field NewPerCollectAdd int[] 各阶收集加成千分比
+---@field RareDesc int 稀有度描述&
+---@field RarityBg string 稀有度背景图
+---@field RarityIcon string 稀有度标识

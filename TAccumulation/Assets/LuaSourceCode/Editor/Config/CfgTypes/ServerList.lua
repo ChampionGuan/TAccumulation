@@ -1,0 +1,11 @@
+﻿---@class cfg.ServerList  excel名称:服务器列表.xlsx
+---@field Display int 是否可见
+---@field Flag int 状态 0正常 1维护
+---@field Hot int 火热
+---@field Id int 服务器ID#
+---@field Name string 服务器名字%
+---@field OpenTime string 开服时间
+---@field Permission int 权限 0正常 1普白 2QA
+---@field Recommend int 推荐
+---@field SvrAddr string 真实服务器列表
+---@field Watermark int 水印开关

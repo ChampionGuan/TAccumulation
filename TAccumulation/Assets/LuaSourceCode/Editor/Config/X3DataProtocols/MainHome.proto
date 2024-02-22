@@ -1,0 +1,24 @@
+syntax = "proto3";
+package X3Data;
+
+//双指推进的类型
+message DoubleTouchType {
+    int64 ID = 1;
+    int32 TouchType = 2;//当前双指推进的类型
+}
+
+//主界面数据
+message MainHomeData {
+    int64 ID = 1;
+    int32 SceneID = 2; //当前场景id
+    int32 ModeType = 3; //交互状态
+    int32 ActorID = 4; //当前看板娘
+    int32 EventID = 5; //特殊事件id
+}
+
+
+//男主行为记录
+message ActionRecord {
+    int64 ActorID = 1; //男主id
+    int32 ActionID = 2; //actionId
+}

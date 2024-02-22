@@ -1,0 +1,11 @@
+﻿---@class cfg.FaceEyelash  excel名称:Face.xlsx
+---@field ColorID int 颜色ID
+---@field ColorIcon string 睫毛颜色Icon
+---@field Des string ##备注
+---@field ID int 唯一ID
+---@field IsDefaultColor int 是否为默认颜色
+---@field ItemCondition int 道具条件
+---@field ShowType int 显示条件
+---@field StyleID int 样式ID
+---@field StyleIcon string 睫毛样式Icon
+---@field StyleSourceID string 睫毛资产ID

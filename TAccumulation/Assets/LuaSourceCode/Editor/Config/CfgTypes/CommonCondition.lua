@@ -1,0 +1,14 @@
+﻿---@class cfg.CommonCondition  excel名称:CommonCondition.xlsx
+---@field ConditionPara0 int 条件参数0
+---@field ConditionPara1 int 条件参数1
+---@field ConditionPara2 int 条件参数2
+---@field ConditionPara3 int 条件参数3
+---@field ConditionPara4 int 条件参数4
+---@field ConditionType int 条件枚举
+---@field DescForDesigner string ##策划用备注
+---@field DescForDesigner2 string ##策划用备注2
+---@field Description int 实际显示用的条件描述&
+---@field GroupID int 条件组ID
+---@field ID int 唯一Key
+---@field MarkType string ##分类必填
+---@field TypeID int ##类型ID

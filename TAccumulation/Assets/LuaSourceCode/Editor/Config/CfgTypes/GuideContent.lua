@@ -1,0 +1,15 @@
+﻿---@class cfg.GuideContent  excel名称:Guide.xlsx
+---@field Desc int 显示文字&
+---@field ID int 唯一ID
+---@field Order int #顺序备注
+---@field Parameter1 string 参数1
+---@field Parameter2 string 参数2
+---@field Parameter3 string 参数3
+---@field Parameter4 string 参数4
+---@field Parameter5 string 参数5
+---@field Parameter6 string 参数6
+---@field Parameter7 string 参数7
+---@field StepDesc string #引导备注说明
+---@field StepGroupID int 归属GuideStepID
+---@field Type int 类型
+---@field TypeDesc string #类型说明

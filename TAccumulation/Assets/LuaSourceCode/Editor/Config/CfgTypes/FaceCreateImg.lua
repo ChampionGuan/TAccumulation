@@ -1,0 +1,12 @@
+﻿---@class cfg.FaceCreateImg  excel名称:FaceCreateImg.xlsx
+---@field ActorModel string 角色模型
+---@field ActorPos cfg.vector3xml 角色模型位置（除1000后使用）
+---@field ActorRot cfg.vector3xml 角色模型朝向（除1000后使用）
+---@field DefaultHeadIcon int 是否为默认玩家头像
+---@field Des string ##备注
+---@field DummyName string 头像截取点名称
+---@field ImgSizeHeight int 图片大小-高
+---@field ImgSizeWidth int 图片大小-宽
+---@field Key string 需生成的图片资源名
+---@field NeedBg int 是否需要场景背景
+---@field Radius int 取景范围3D半径（除1000后使用）

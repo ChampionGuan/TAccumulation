@@ -1,0 +1,13 @@
+﻿---@class cfg.MonsterBase  excel名称:BattleMonster.xlsx
+---@field CritHurtAdd int 暴击伤害千分比
+---@field CritVal int 暴击
+---@field Description int ##怪物类型描述
+---@field ElementRatio int 元素适应系数千分比
+---@field Key int 唯一id
+---@field Level int *怪物等级
+---@field MagAttack int 魔法攻击
+---@field MagDefence int 魔法防御
+---@field MaxHP int 血量
+---@field NumType int *怪物数值类型
+---@field PhyAttack int 物理攻击
+---@field PhyDefence int 物理防御

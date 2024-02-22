@@ -1,0 +1,16 @@
+﻿---@class cfg.MiaoGachaPack  excel名称:MiaoGacha.xlsx
+---@field CloseTime undefined time 下架时间
+---@field Cost cfg.s3int[] 资源消耗
+---@field Cost1 cfg.s2int[] 资源消耗（新）
+---@field Cost2 cfg.s3int[] 资源消耗（付费）
+---@field DropGroupID int 掉落组
+---@field GroupID int 关联卡池类型
+---@field ID int 系列编号
+---@field Name int 名称&
+---@field OpenCondition int 开启条件
+---@field OpenTime undefined time 上架时间
+---@field Picture string 卡包封面
+---@field Price int 消耗数量
+---@field PriceShow int[] 单价展示（新）
+---@field Priority int 优先级
+---@field ShowCondition int 显示条件

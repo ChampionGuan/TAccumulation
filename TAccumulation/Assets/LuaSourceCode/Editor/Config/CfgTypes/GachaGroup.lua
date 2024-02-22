@@ -1,0 +1,15 @@
+﻿---@class cfg.GachaGroup  excel名称:Gacha.xlsx
+---@field FreeCD int 单抽免费cd
+---@field GachaBackground string 卡池组背景图
+---@field GachaLimit int 抽卡次数限制
+---@field GachaType int 卡池类型
+---@field GroupName string ##组名称
+---@field GroupNameTxt int &卡池组名称
+---@field ID int 卡池组
+---@field IconShowLeftTime int 展示倒计时
+---@field IsActivity int 是否为活动卡池组
+---@field MainHomeIcon int 主界面Icon图标
+---@field OpenCondition int 卡池组开启条件
+---@field SerialID int 排序
+---@field ShowCondition int 卡池组显示条件
+---@field ShowInGacha int 卡池组是否显示在许愿界面

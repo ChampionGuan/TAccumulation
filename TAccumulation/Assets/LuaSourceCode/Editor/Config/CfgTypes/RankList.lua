@@ -1,0 +1,12 @@
+﻿---@class cfg.RankList  excel名称:RankList.xlsx
+---@field CacheUpdateTime int 服务器缓存更新时间
+---@field DataChange int 数据记录方式
+---@field Desc int 排行榜名称&
+---@field Global int 是否全局排行
+---@field OldStage int 旧榜保存期数
+---@field Param int 整型预留
+---@field RankDisplay int 客户端显示排名
+---@field RankLimit int 服务器存储排名
+---@field RankListID int 排行榜ID
+---@field RankType int 排行榜类型
+---@field RoleID int 角色分类

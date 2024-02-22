@@ -1,0 +1,55 @@
+﻿syntax = "proto3";
+package X3Data;
+
+enum UploadStateEnum {
+  Local = 0;
+  HasUpload = 999;
+}
+
+message PhotoData {
+  string Name = 1;
+  int64 Mode = 2; 
+  int64 MaleID = 3; 
+  int64 FemaleID = 4; 
+  int64 PictureNum = 5; 
+  int64 NumOfPeople = 6; 
+  UploadStateEnum UploadState = 7; 
+  int64 ParentID = 8; 
+  int64 PlayerID = 9; 
+  int64 TimeStamp = 10; 
+  string ActionString = 11; 
+  string DressString = 12; 
+  string ServerPhotoName = 13; 
+  string FullUrl = 14;
+  string Md5String = 15;
+}
+
+
+//与服务器proto保持一致，供其他业务使用
+
+enum PhotoGroup {
+    Group_Invalid = 0;
+    Group_Single  = 1;
+    Group_Double  = 2;
+    Group_Other   = 4;
+}
+
+enum PhotoStatus {
+    Audit_Default = 0;  // 初始
+    Auditting     = 1;  // 审核中
+    Audit_Permit  = 2;  // 审核通过
+    Audit_Reject  = 3;  // 审核未通过
+}
+
+message Photo {
+    string Url                    = 1;
+    int64 TimeStamp               = 2;   // 时间戳，个人照片的唯一标识
+    PhotoStatus Status            = 3;   // 图片状态
+    int32 RoleId                  = 4;   // 男主
+    PhotoGroup GroupMode          = 5;   // 合照类型
+    int32 Mode                    = 6;   // 拍照模式
+    int32 PuzzleMode              = 7;   // 拼图模式
+    repeated int32 ActionList     = 8;   // 动作列表
+    repeated int32 DecorationList = 9;   // 装饰列表
+    Photo SourcePhoto             = 10;  // 源图片
+}

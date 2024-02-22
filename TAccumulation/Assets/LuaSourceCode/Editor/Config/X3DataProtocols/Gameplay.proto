@@ -1,0 +1,34 @@
+syntax = "proto3";
+package X3Data;
+
+//玩法
+message GameplayInfo
+{
+  int64 Id = 1;                    //Define.GamePlayEnterType
+  int32 SystemID = 2;              //对应的系统ID
+  map<int32, bool> CanHangOn = 3;  //玩法数据，目前只有一个可否挂起，未来有多的可以新建个Data
+  int32 PopId = 4;                 //强制继续弹窗ID
+  int32 PopIdUnforced = 5;         //非强制弹窗ID
+  map<int32, GameplayContinueData> ContinueDatas = 6; //挂起的玩法数据
+}
+
+message GameplayContinueData
+{
+  int64 SubID = 1;                  //关卡ID
+  int32 EnterType = 2;              //玩法入口类型
+  int32 GameType = 3;               //玩法游戏类型
+  bool IsGuideSkip = 4;             //新手引导已跳过，需要结算
+  string Version = 5;               //客户端版本号
+  bool CanHangOn = 6;               //是否可以挂起
+  int32 PopId = 7;                  //弹窗ID
+}
+
+message GameplayCommonData
+{
+  int64 SubID = 1;                  //关卡ID
+  int32 EnterType = 2;              //玩法入口类型
+  int32 GameType = 3;               //玩法游戏类型
+  int32 CurrentRoundIndex = 4;      //当前轮数
+  int32 MaxRoundCount = 5;          //游戏最大轮数
+  int32 TurnCount = 6;              //游戏当前回合数
+}

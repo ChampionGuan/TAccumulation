@@ -1,0 +1,11 @@
+﻿---@class cfg.PhoneCallConversation  excel名称:PhoneCall.xlsx
+---@field CallID int 电话ID
+---@field ConditionChoice cfg.s2int[] 额外选项
+---@field ConditionNextID cfg.s3int[] 条件分支
+---@field Content int 发送内容&
+---@field ID int 唯一ID
+---@field NextID int[] 下个节点ID
+---@field Reward cfg.s3int[] 获得奖励
+---@field Teller int 发送人
+---@field Type int 内容类型
+---@field Voice string 语音资源

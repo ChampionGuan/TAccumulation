@@ -1,0 +1,12 @@
+﻿---@class cfg.PhoneOfficialArticle  excel名称:PhoneOfficial.xlsx
+---@field Account int 公众号ID
+---@field Bg string 文章大图
+---@field DescForDesigner string ##策划用备注
+---@field ID int 唯一ID
+---@field Interested cfg.s3int[] 感兴趣的人
+---@field IsShow int 获取后隐藏
+---@field Like int 点赞数
+---@field MomentShare cfg.s3int 对应女主朋友圈ID
+---@field Read int 阅读量
+---@field Title int 文章标题&
+---@field Writer int 作者名字&

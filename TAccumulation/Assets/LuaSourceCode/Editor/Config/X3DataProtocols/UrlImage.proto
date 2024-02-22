@@ -1,0 +1,9 @@
+﻿syntax = "proto3";
+package X3Data;
+
+message UrlImageData {
+  string originName    = 1;
+  string fakeName      = 2;
+  string checkString   = 3;
+}
+

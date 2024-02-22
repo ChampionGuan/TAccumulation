@@ -1,0 +1,14 @@
+﻿---@class cfg.ActorFashionConfig  excel名称:BattleActor.xlsx
+---@field BattleCutScene int[] 角色表演
+---@field BattleEvent int[] 装载副本事件
+---@field DeadFXDelayTime Fix 死亡特效延迟播放
+---@field DeadFXTime Fix 死亡特效播放时长
+---@field FashionModel string 时装模型
+---@field FashionName string 时装名称
+---@field ID int 时装编号
+---@field Number int 时装序号
+---@field SCoreID int 归属SCore
+---@field SummonMonsterID int[] 召唤物关联
+---@field TalkTreeName string[] 喊话AI
+---@field WeaponModel int 武器模型
+---@field WwiseID int[] 战斗语音

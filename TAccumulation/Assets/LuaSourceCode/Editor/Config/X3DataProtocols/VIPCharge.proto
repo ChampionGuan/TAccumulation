@@ -1,0 +1,10 @@
+syntax = "proto3";
+package X3Data;
+
+message VIPChargeData {
+  int64 Id = 1;
+  int32 Level = 2;  // VIP等级
+  int32 Exp = 3;  // VIP经验
+  map<int32, bool> Rewards = 4;  // 奖励的领取状态
+}
+

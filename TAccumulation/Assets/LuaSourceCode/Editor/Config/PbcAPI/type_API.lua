@@ -1,0 +1,89 @@
+﻿--警告 文件内容通过菜单修改  请勿更改--
+
+---@class pbcmessage.Enum @ Enum type definition.
+---   // Enum type name.
+---@field name string 
+---   // Enum value definitions.
+---@field enumvalue pbcmessage.EnumValue[] 
+---   // Protocol buffer options.
+---@field options pbcmessage.Option[] 
+---   // The source context.
+---@field source_context pbcmessage.SourceContext 
+---   // The source syntax.
+---@field syntax pbcmessage.Syntax 
+local  Enum  = {}
+---@class pbcmessage.EnumValue @ Enum value definition.
+---   // Enum value name.
+---@field name string 
+---   // Enum value number.
+---@field number number 
+---   // Protocol buffer options.
+---@field options pbcmessage.Option[] 
+local  EnumValue  = {}
+---@class pbcmessage.Field @ A single field of a message type.
+---   // Basic field types.
+---     // Field type unknown.
+---@field  0 pbcmessage.TYPE_UNKNOWN 
+---     // Field type double.
+---@field  1 pbcmessage.TYPE_DOUBLE 
+---     // Field type float.
+---@field  2 pbcmessage.TYPE_FLOAT 
+---     // Field type int64.
+---@field  3 pbcmessage.TYPE_INT64 
+---     // Field type uint64.
+---@field  4 pbcmessage.TYPE_UINT64 
+---     // Field type int32.
+---@field  5 pbcmessage.TYPE_INT32 
+---     // Field type fixed64.
+---@field  6 pbcmessage.TYPE_FIXED64 
+---     // Field type fixed32.
+---@field  7 pbcmessage.TYPE_FIXED32 
+---     // Field type bool.
+---@field  8 pbcmessage.TYPE_BOOL 
+---     // Field type string.
+---@field  9 pbcmessage.TYPE_STRING 
+---     // Field type group. Proto2 syntax only, and deprecated.
+---@field  10 pbcmessage.TYPE_GROUP 
+---     // Field type message.
+---@field  11 pbcmessage.TYPE_MESSAGE 
+---     // Field type bytes.
+---@field  12 pbcmessage.TYPE_BYTES 
+---     // Field type uint32.
+---@field  13 pbcmessage.TYPE_UINT32 
+---     // Field type enum.
+---@field  14 pbcmessage.TYPE_ENUM 
+---     // Field type sfixed32.
+---@field  15 pbcmessage.TYPE_SFIXED32 
+---     // Field type sfixed64.
+---@field  16 pbcmessage.TYPE_SFIXED64 
+---     // Field type sint32.
+---@field  17 pbcmessage.TYPE_SINT32 
+---     // Field type sint64.
+---@field  18 pbcmessage.TYPE_SINT64 
+local  Field  = {}
+---@class pbcmessage.Option @ enumeration, etc.
+---   // The option's name. For protobuf built-in options (options defined in
+---   // descriptor.proto), this is the short name. For example, `"map_entry"`.
+---   // For custom options, it should be the fully-qualified name. For example,
+---   // `"google.api.http"`.
+---@field name string 
+---   // The option's value packed in an Any message. If the value is a primitive,
+---   // the corresponding wrapper type defined in google/protobuf/wrappers.proto
+---   // should be used. If the value is an enum, it should be stored as an int32
+---   // value using the google.protobuf.Int32Value type.
+---@field value pbcmessage.Any 
+local  Option  = {}
+---@class pbcmessage.Type @ A protocol buffer message type.
+---   // The fully qualified message name.
+---@field name string 
+---   // The list of fields.
+---@field fields pbcmessage.Field[] 
+---   // The list of types appearing in `oneof` definitions in this type.
+---@field oneofs string[] 
+---   // The protocol buffer options.
+---@field options pbcmessage.Option[] 
+---   // The source context.
+---@field source_context pbcmessage.SourceContext 
+---   // The source syntax.
+---@field syntax pbcmessage.Syntax 
+local  Type  = {}

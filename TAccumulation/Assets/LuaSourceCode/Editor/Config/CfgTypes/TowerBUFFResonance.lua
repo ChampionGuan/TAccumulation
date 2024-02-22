@@ -1,0 +1,13 @@
+﻿---@class cfg.TowerBUFFResonance  excel名称:ClimbTower.xlsx
+---@field Amount int 要求数量
+---@field Condition cfg.s2int[] 达成条件（废弃）
+---@field Description int 效果描述&
+---@field EffectID int 生效ID
+---@field EffectLevel int 效果等级
+---@field FightPercent int 战力提升百分比
+---@field ID int 唯一ID
+---@field Level int 共鸣等级
+---@field Name int 名称&
+---@field Order int 排序
+---@field Path string 水晶图标
+---@field Type int 祝福类型

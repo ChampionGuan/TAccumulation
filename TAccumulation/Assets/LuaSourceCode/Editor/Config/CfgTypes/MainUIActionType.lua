@@ -1,0 +1,16 @@
+﻿---@class cfg.MainUIActionType  excel名称:MainUIAction.xlsx
+---@field AI string[] 对应AI
+---@field ActionClass string 控制脚本
+---@field BackType int 返回按钮类型
+---@field Des1 int ##备注
+---@field DialogueUI cfg.s2int[] dialogue UI显隐控制
+---@field HideInteractiveUI string[] 触发后隐藏互动模式UI（结束后还原）
+---@field HideMainUI int 触发后是否隐藏主界面
+---@field HidePhotoEdit int 是否屏蔽照片编辑
+---@field IgnoreStateCount int 触发后是否增加【不理人状态】计数
+---@field Key string 唯一StringKey
+---@field RefuseInterrupt int[] 是否不被【1失焦】【2退出互动】【3切屏】打断
+---@field ShowInteractiveUI string[] 触发后显示互动模式UI（结束后还原）
+---@field TaskCountID int 任务计数用ID
+---@field ToPendingList int 触发后是否放入待处理队列
+---@field TriggerCondition int[] 触发条件

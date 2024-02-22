@@ -1,0 +1,11 @@
+﻿---@class cfg.CutScenePlayControl  excel名称:CutScenePlayControl.xlsx
+---@field CutSceneName string CutScene名称
+---@field Des string ##描述
+---@field FinishDontHideAssetID int[] 完成播放时要隐藏的本CutScene使用资产中，无需隐藏的资产ID
+---@field FinishHideOtherActor int 完成播放时是否隐藏本CutScene中使用的角色资产ID
+---@field FinishHideOtherItem int 完成播放时是否隐藏本CutScene中使用的道具资产ID
+---@field ID int ID
+---@field StartDontHideAssetID int[] 启动时要隐藏的本CutScene未使用资产中，无需隐藏的资产ID
+---@field StartForceHideAssetID int[] 启动时需强制隐藏的指定资产ID
+---@field StartHideOtherActor int 启动时是否隐藏本CutScene未使用的角色资产ID
+---@field StartHideOtherItem int 启动时是否隐藏本CutScene未使用的道具资产ID

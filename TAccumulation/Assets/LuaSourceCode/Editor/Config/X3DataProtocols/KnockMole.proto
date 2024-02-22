@@ -1,0 +1,42 @@
+syntax = "proto3";
+package X3Data;
+
+enum KnockMoleHoleStatus {
+  KnockMoleHoleNone = 0;//空闲状态
+  KnockMoleHoleHaveMole = 1;//已有地鼠
+  KnockMoleHoleEnd = 2;//游戏结束状态
+  KnockMoleHoleClose = 3;//关门
+}
+
+enum KnockMoleStatus {
+  KnockMoleNone = 0;//默认状态
+  KnockMoleShow = 1;//地鼠出现
+  KnockMoleStay = 2; //地鼠停留
+  KnockMoleKnock = 3;//地鼠被击打
+}
+
+
+//打地鼠关卡数据
+message KnockMoleLevelData{
+  int64  difficultyId = 1; //关卡id
+  int32 integralNum = 2;//当前积分数
+  map<int32, KnockMoleHole> knockMoleHoleMap = 3; //当前关卡的所有地鼠洞
+  int32 gamePlayLeftTime = 4; //打地鼠剩余时间(毫秒)
+}
+
+//地鼠洞数据
+message  KnockMoleHole{
+  int64 id = 1;//地鼠洞Id
+  KnockMoleHoleStatus status = 2;//地鼠洞状态
+  KnockMoleData knockMoleData = 3;//地鼠数据
+}
+
+//地鼠数据
+message  KnockMoleData{
+  int64 id = 1;//地鼠洞Id
+  int32 moleId = 2; //地鼠Id
+  KnockMoleStatus status = 3;//地鼠状态
+  int64 endShowTime = 4; // 地鼠结束显示的时间(毫秒)
+}
+
+

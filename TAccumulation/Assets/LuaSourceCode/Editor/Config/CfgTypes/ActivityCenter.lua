@@ -1,0 +1,17 @@
+﻿---@class cfg.ActivityCenter  excel名称:ActivityCenter.xlsx
+---@field ActivityCurrency cfg.s3int 活动代币
+---@field ActivityCurrencyLimit int 活动代币-上限
+---@field ActivityCurrencyShow int 活动代币-显示
+---@field ActivityDes int &活动描述
+---@field ActivityID int 活动ID
+---@field ActivityIcon string 独立入口图标
+---@field ActivityName int &活动名称
+---@field ActivityPrefab string 活动界面prefab
+---@field ActivityRuleID string 规则页文本
+---@field ActivityTaskGroupID int[] 关联任务组
+---@field ActivityType int 活动类型
+---@field CurrencyRow cfg.s3int[] 货币栏
+---@field GamePlayID int 关联玩法ID
+---@field JumpTo string 跳转链接
+---@field JumpToShop string 跳转商店
+---@field ShowSPRewards cfg.s3int[] 特殊展示道具

@@ -1,0 +1,12 @@
+﻿---@class cfg.SCoreStar  excel名称:SCore.xlsx
+---@field AddCritVal int 增加暴击率
+---@field AddMaxHP int 增加生命值
+---@field AddPhyAtk int 增加物理攻击
+---@field AddPhyDef int 增加物理防御
+---@field AttrAddList cfg.s2int[] 其他属性加成
+---@field ID int 唯一ID
+---@field LevelLimit int Score等级上限
+---@field NeedGold int 提升到下一星需要消耗的金币
+---@field NeedItem cfg.s3int[] 突破到下一级需要消耗的道具
+---@field StarID int *突破组ID
+---@field StarLv int *突破阶段

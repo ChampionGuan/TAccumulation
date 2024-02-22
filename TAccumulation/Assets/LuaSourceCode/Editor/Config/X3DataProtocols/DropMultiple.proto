@@ -1,0 +1,39 @@
+syntax = "proto3";
+package X3Data;
+
+//系统类型枚举
+enum DropMultipleEffectSystemType {
+    DropMultipleEffectSystemTypeNone                                        = 0; //空类型
+    DropMultipleEffectSystemTypeCommonStageEntry                            = 1; //战斗关卡
+    DropMultipleEffectSystemTypeDailyDateEntry                              = 2; //小小快乐
+}
+
+//显示类型
+enum DropMultipleShowType {
+    DropMultipleShowTypeNone                                = 0; //空类型
+    DropMultipleShowTypeSystemEntry                         = 1; //系统入口
+    DropMultipleShowTypeDungeonEntry                        = 2; //副本入口
+    DropMultipleShowTypeStageEntry                          = 3; //关卡入口
+    DropMultipleShowTypeDropDetails                         = 4; //掉落详情
+    DropMultipleShowTypeItemBottom                          = 5; //物品下标
+    DropMultipleShowTypeItemRightCorner                     = 6; //物品角标(右上)
+}
+
+//显示类型枚举
+enum DropMultipleFilterType {
+    DropMultipleFilterTypeAll                               = 0; //所有
+    DropMultipleFilterTypeActivity                          = 1; //多倍活动
+    DropMultipleFilterTypeReturnActivity                    = 2; //回流活动
+}
+
+message DropMultipleData{
+    int64 index = 1; // 无意义，作为数组下标
+    int64 lastUpdateTime = 2; // 上次刷新时间
+    int64 nextUpdateTime = 3; // 下次刷新时间
+    int32 rewardTimes = 4; // 已使用次数
+}
+
+message ActivityDropMultipleData{
+    int64 activityId = 1; //活动ID
+    map<int32, DropMultipleData>  dropMultipleDataMap = 2; //key为内部ID
+}

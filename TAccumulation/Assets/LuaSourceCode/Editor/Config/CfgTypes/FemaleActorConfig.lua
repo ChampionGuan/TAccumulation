@@ -1,0 +1,14 @@
+﻿---@class cfg.FemaleActorConfig  excel名称:BattleActor.xlsx
+---@field AnimatorFilename string Animator配置
+---@field BattleAIName string 战斗AI
+---@field BattleAITriggerIDs int[] 战斗AI事件监听
+---@field DisableRootMotion boolean 是否禁用RootMotion
+---@field EditorVisible int 编辑器可见
+---@field FemaleBattleFashionID int 女主战斗编号
+---@field ModelID int 模型索引
+---@field Name string SCore名称
+---@field RigidPoint Fix 刚性值
+---@field TalkAIName string 对话AI
+---@field TalkAITriggerIDs int[] 战斗沟通AI事件监听
+---@field TimelineEvent string TimelineEvent配置
+---@field Type int 角色类型

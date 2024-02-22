@@ -1,0 +1,40 @@
+syntax = "proto3";
+package X3Data;
+
+//邀请函数据
+message DatePlanInvitationData {
+    int64 LetterID   = 1;  // 邀请函ID
+    int32 RoleID = 2;  // 男主ID
+    int64 Timestamp  = 3;  // 约会指定时间
+    repeated DateContent ContentList    = 4;
+    DatePlanInvitationStatusType Status = 5;  // 状态类型: 未开始, 进行中, 正常结束, 提前结束
+}
+
+message DateContent {
+    int64 ID        = 1;
+    bool Ongoing   = 2;
+    DateGamePlayData DateGamePlayData = 3;
+}
+
+message DateGamePlayData {
+    int64 ID        = 1;
+    DateMiaoData DateMiaoData   = 2; // 喵喵牌记录的数据: 局结果
+}
+
+// 喵喵牌记录的数据: 局结果
+message DateMiaoData {
+    int64 ID        = 1;
+    repeated int32 ResultList = 2; // 语义见 miao.proto enum MiaoResultType, gameplay record 存数据原始为 int32, 故此处用 int32
+}
+
+
+enum DatePlanInvitationStatusType {
+    DatePlanInvitationStatusTypeInitiated = 0;  // 发起邀请
+    DatePlanInvitationStatusTypeOpen      = 1;  // 打开邀请
+    DatePlanInvitationStatusTypeAccept    = 2;  // 接受邀请
+    DatePlanInvitationStatusTypePutAway   = 3;  // 收起邀请
+    DatePlanInvitationStatusTypeOngoing   = 4;  // 进行中
+    DatePlanInvitationStatusTypeHangup    = 5;  // 挂起 // TODO 可以不需要显示挂起状态
+    DatePlanInvitationStatusTypeFinish    = 6;  // 正常结束
+    DatePlanInvitationStatusTypeAbort     = 7;  // 提前结束
+}

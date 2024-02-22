@@ -1,0 +1,12 @@
+﻿---@class cfg.DialogueFucEvent  excel名称:DialogueFucEvent.xlsx
+---@field Des string 描述
+---@field EventName string 事件名称
+---@field FucType int 功能类型
+---@field Group string 组别
+---@field ID int 事件ID
+---@field Para0 string 参数0
+---@field Para1 string 参数1
+---@field Para2 string 参数2
+---@field Para3 string 参数3
+---@field Para4 string 参数4
+---@field SubGroup string 下级分组

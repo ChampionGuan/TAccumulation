@@ -1,0 +1,11 @@
+﻿---@class cfg.PhotoSuit  excel名称:PhotoSuit.xlsx
+---@field Desc string ##说明
+---@field Filter int 套装滤镜
+---@field Frame int 套装边框
+---@field ID int 唯一ID
+---@field Icon string 套装icon
+---@field Male int 所属男主
+---@field Model int 所属模式
+---@field Name int 套装名称&
+---@field StickersGroup int[] 套装包含贴纸组合
+---@field Type int 套装类型

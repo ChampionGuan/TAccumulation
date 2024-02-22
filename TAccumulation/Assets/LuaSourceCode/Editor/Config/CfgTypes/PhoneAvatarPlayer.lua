@@ -1,0 +1,15 @@
+﻿---@class cfg.PhoneAvatarPlayer  excel名称:PhoneAvatar.xlsx
+---@field AchievementCondition int 成就条件
+---@field CardCondition int 头像解锁要求卡牌
+---@field Des string ##策划备注
+---@field FashionCondition int 头像解锁要求皮肤
+---@field ID int 头像ID
+---@field LovePointLevelCondition cfg.s2int 头像解锁好感度条件
+---@field MatchingHeadID int 情侣头像ID
+---@field MatchingHeadType int 情侣头像类型
+---@field Name int 头像名称&
+---@field PlayerLevelCondition int 头像解锁玩家等级条件
+---@field Resource string 头像资源
+---@field Role int 相关男主
+---@field Source int[] 头像获取途径
+---@field TimeCondition undefined time 头像解锁时间条件

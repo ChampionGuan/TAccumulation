@@ -1,0 +1,11 @@
+﻿---@class cfg.ArenaMonsterAttribute  excel名称:Arena.xlsx
+---@field Attack int 攻击力
+---@field Count int #层数
+---@field CritHurt int 暴击伤害
+---@field CritVal int 暴击
+---@field DamageForShow int 客户端显示伤害值
+---@field DamageLower int 伤害下限
+---@field DamageUpper int 伤害值上限
+---@field Defence int 防御
+---@field ID int 唯一ID
+---@field MonsterID int 怪物ID

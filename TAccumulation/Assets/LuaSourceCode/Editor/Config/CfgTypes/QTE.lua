@@ -1,0 +1,15 @@
+﻿---@class cfg.QTE  excel名称:BattleQTE.xlsx
+---@field ActionParameter int[] 触发效果参数
+---@field ActionType int 触发效果类型
+---@field Description string #备注
+---@field Duration Fix 整体时间
+---@field ID int ID
+---@field PerfectActionParameter int[] 完美触发效果参数
+---@field PerfectActionPositionType int 完美时机类型
+---@field PerfectActionType int 完美触发效果类型
+---@field QTEFailSkill int[] QTE失败释放的技能
+---@field QTEPriority int QTE优先级
+---@field QTESuccessSkill int[] QTE成功释放的技能
+---@field SubType int 子类型
+---@field Type int 类型
+---@field TypeParameter Fix 类型参数

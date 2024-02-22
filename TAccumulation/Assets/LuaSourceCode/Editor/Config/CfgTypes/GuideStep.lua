@@ -1,0 +1,17 @@
+﻿---@class cfg.GuideStep  excel名称:Guide.xlsx
+---@field AnimArray string 检测动画
+---@field CompleteCondition string 完成条件
+---@field CompleteGuide int[] 完成引导
+---@field EndSendMessage string 步骤结束发送消息
+---@field GuideDesc string #引导描述
+---@field GuideGroupID int 所属GuideID
+---@field HoldTime int 挂起时间
+---@field ID int 唯一ID
+---@field IsKey int 是否为关键步骤
+---@field Order int #顺序备注
+---@field PreSendMessage string 步骤开始发送消息
+---@field ReMark string #描述备注
+---@field RestartType int 重开方式
+---@field Reward cfg.s3int[] 步骤完成奖励
+---@field StartCondition string 开始条件
+---@field WaitTime int 等待时间

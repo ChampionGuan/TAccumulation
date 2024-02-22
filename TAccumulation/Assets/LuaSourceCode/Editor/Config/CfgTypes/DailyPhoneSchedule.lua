@@ -1,0 +1,14 @@
+﻿---@class cfg.DailyPhoneSchedule  excel名称:DailyPhone.xlsx
+---@field ContacterID int 联系人ID
+---@field EndTime int 结束时间
+---@field FashionID int[] 配饰名
+---@field ID int 唯一ID
+---@field Para1 int 时间参数1
+---@field Para2 int 参数2
+---@field Para3 int 参数3
+---@field Para4 int 参数4
+---@field Para5 int 参数5
+---@field Priority int 优先级
+---@field RoutineGroup string ##日程组备注
+---@field RoutineGroupID int 日程组ID
+---@field StartTime int 开始时间

@@ -1,0 +1,14 @@
+syntax = "proto3";
+package X3Data;
+
+message BattlePassData {
+  int64 primary = 1;
+  int32 ID                        = 2;  // 当期配置id
+  bool WeeklyRewardClaim          = 3;
+  int64 LastRefreshTime           = 4;
+  int32 Exp                       = 5;
+  map<int32, int32> RewardClaimed = 6;  // 奖励领取进度 奖励等级->领奖状态 1：免费奖励已领，2: 付费奖励已领
+  int32 Level                     = 7;
+  int32 ExtraLevel                = 8;  //额外等级
+  map<int32, bool> PayIDs         = 9;  //付费状况
+}

@@ -1,0 +1,35 @@
+syntax = "proto3";
+package X3Data;
+
+message HunterContestSeason {
+    int64 ID        = 1;  // 段位组ID
+    int32 TotalStar = 2;  // 赛季总星数
+    bool Pass       = 3;  // 是否通关
+}
+
+message HunterContest {
+    string RankLevel        = 1;  // 段位组等级
+    HunterContestSeason CurrentSeason    = 2;  // 当前赛季数据
+    HunterContestSeason LastSeason       = 3;  // 上一个赛季数据
+    map<string, HunterContestCards> Cards = 4;  // key:区域 value：思念上阵数据
+    bool FirstEnterSeason                = 5;  // 首次进入赛季
+}
+
+// 设定大螺旋各段位等级的卡牌组
+message HunterContestCards {
+    string UID        = 1;  // 段位组等级 *10 +区域id
+    map<int32, HunterContestCard> CardIDs = 2;  // key:槽位 value：思念ID
+}
+
+// 设定大螺旋各段位等级的卡牌组
+message HunterContestCard {
+    string UID = 1;
+    int32 Slot        = 2;  // 位置
+    int32 CardID = 3;  // cardID
+    repeated int32 GemCores = 4;  //芯核
+}
+
+message HunterContestRewardData {
+    int64 GroupID        = 1;  // 奖励组ID
+    repeated int32 Rewarded = 2;  // 已领取的挡位奖励
+}

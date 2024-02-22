@@ -1,0 +1,13 @@
+﻿---@class cfg.SCoreRare  excel名称:SCore.xlsx
+---@field AttrAddList cfg.s2int[] 其他属性加成
+---@field BreakReward cfg.s3int[] 分解产物
+---@field CollectAddIsShow int 收集加成说明中是否显示该档位
+---@field Desc string ##描述
+---@field Id int 稀有度
+---@field PerCollectAdd int 收集加成（千分比）
+---@field PropMaxHPScale int 收集加成SCore血量千分比
+---@field PropPhyAttackScale int 收集加成SCore攻击千分比
+---@field PropPhyDefenceScale int 收集加成SCore防御千分比
+---@field ScoreBgBack string 列表背景色
+---@field ScoreBgFront string 列表前景色
+---@field ScoreRareIcon string 稀有度标记

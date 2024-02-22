@@ -1,0 +1,18 @@
+syntax = "proto3";
+package X3Data;
+
+//世界情报词条列表数据
+message Entry2WorldInfoList{
+    int64 entryId = 1;                //词条分类ID
+    repeated int64 itemIds = 2;       //词条ID列表（主词条）
+}
+
+message Main2WorldInfoList{
+    int64 mainInfoId = 1;               //主词条ID
+    repeated int64 itemIds = 2;         //词条ID列表（副词条）
+}
+
+message WorldInfoData{
+    int64 worldInfoId = 1;       //词条ID
+    bool rewarded = 2;           //是否获得奖励
+}

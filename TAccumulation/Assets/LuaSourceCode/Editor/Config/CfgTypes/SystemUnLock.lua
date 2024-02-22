@@ -1,0 +1,14 @@
+﻿---@class cfg.SystemUnLock  excel名称:SystemUnLock.xlsx
+---@field ApiString string[] 服务器限制系统协议
+---@field ConstString string Key
+---@field Des string ##注释
+---@field ExOpenCondition int 额外需要满足的开启条件
+---@field Icon string 解锁提示界面的图标显示
+---@field Id int 系统枚举id
+---@field IsDisable int 系统是否屏蔽
+---@field NeedClearStage int[] 需要通关的关卡ID
+---@field NeedLevel int 需要达到的玩家等级
+---@field OpenDescription int &解锁提示界面的功能描述
+---@field OpenShow int 是否需要开放时的提示展示
+---@field ShowName int &功能名称
+---@field ShowOrder int 弹窗优先级

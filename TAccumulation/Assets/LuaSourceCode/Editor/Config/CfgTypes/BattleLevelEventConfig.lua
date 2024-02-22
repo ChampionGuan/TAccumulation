@@ -1,0 +1,17 @@
+﻿---@class cfg.BattleLevelEventConfig  excel名称:BattleLevel.xlsx
+---@field Angle Fix 扇形角度
+---@field Args undefined lua 自定义参数
+---@field Filename string FSM状态机文件名
+---@field FxID int 特效ID
+---@field Height Fix 高度y轴
+---@field ID int ID
+---@field Length Fix 长度x轴或胶囊体长
+---@field LifeTime Fix 生命时长
+---@field MountType int 挂载类型
+---@field Note string #备注
+---@field Offset FVector3 偏移
+---@field Radius Fix 半径
+---@field RotateType int 旋转类型
+---@field ShapeType int 形状类型
+---@field Type int 关卡事件类型
+---@field Width Fix 宽度z轴

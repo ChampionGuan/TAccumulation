@@ -1,0 +1,13 @@
+syntax = "proto3";
+package X3Data;
+
+// 月卡数据
+message MonthCardData{
+  int64 primaryKey = 1;   // 主键
+  map<int32, int64> MonthCardTimeMap = 2;   // 月卡期限数据 map<int,int> [Id,value] (Id是月卡id，value是月卡过期时间戳) 
+  map<int32, int32> DailyRewardFlagMap = 3;   // 月卡奖励信息 map<int,int> [Id,value] (Id是月卡id，value是月卡奖励)
+  map<int32, int32> CardPowerMap = 4;   // 月卡特权数据 map<int,int> [PowerId,value] (PowerId是特权id，value是特权叠加次数)
+  int64 LastRefreshTime = 5;  // 上次刷新时间
+  bool RedPointState = 6;   // 月卡红点
+}
+

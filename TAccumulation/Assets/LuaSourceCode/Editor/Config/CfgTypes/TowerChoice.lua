@@ -1,0 +1,14 @@
+﻿---@class cfg.TowerChoice  excel名称:ClimbTower.xlsx
+---@field ChoiceArray1 cfg.s2int[] 选项组1
+---@field ChoiceArray2 cfg.s2int[] 选项组2
+---@field ChoiceArray3 cfg.s2int[] 选项组3
+---@field ChoiceArray4 cfg.s2int[] 选项组4
+---@field ChoiceBriefDisscript int 选项简要描述&
+---@field ChoiceCondition int[] 选项前置选项
+---@field ChoiceDisscript int 选项描述&
+---@field EffectParameter1 int 参数1
+---@field EffectParameter2 cfg.s2int[] 参数2
+---@field EffectParameter3 cfg.s3int[] 参数3
+---@field ID int 唯一ID
+---@field Mark int 策划备注#
+---@field Type int 类型

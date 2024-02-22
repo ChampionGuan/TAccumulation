@@ -1,0 +1,35 @@
+﻿syntax = "proto3";
+package X3Data;
+
+//ASMRWnd的显示形式
+enum ASMRWndShowMode {
+  MainWnd = 0;
+  CustomizeWnd = 1;
+}
+
+message ASMRData {
+  int64 primary = 1;
+  ASMRWndShowMode asmrWndShowMode = 2; //ASMRWnd显示模式
+  bool isAsmrWndShowCustomize = 3; //ASMRWnd ListView是否显示的是自定义数据
+  int32 mainWndListSelectedIndex = 4; //主界面选中的曲目序号
+  repeated int32 customizeWndListSelectedArray = 5; //自定义界面选中的曲目序号数组
+  int32 curRoleId = 6; //当前角色Id
+  map<int32, bool> curRoleCustomASMRSelectedMap = 7; //当前角色自定义曲目选中状态
+  map<int32, int32> roleLastPlayedASMRIdMap = 8; //男主最近播放过的ASMRId字典
+}
+
+//单个ASMR红点相关的数据
+message ASMRRedPointData {
+  int64 asmrId   = 1; //ASMR Id
+  bool  isReward = 2; //是否有奖励待领取
+  int64 roleId   = 3; //角色 Id
+  bool  isNotNew = 4; //是否非获得的（被播放过/选中过都是true）
+  bool  isUnLock = 5; //是否已经解锁
+  bool  isCustom = 6; //是否在自定义列表中
+}
+
+message ASMRPersistentData {
+  int64 id                           = 1;
+  map<int32, bool> oldAsmrIdMap      = 2; //播放过、选中过的ASMR Id
+}
+

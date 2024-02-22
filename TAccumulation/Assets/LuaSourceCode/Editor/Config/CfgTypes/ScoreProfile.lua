@@ -1,0 +1,11 @@
+﻿---@class cfg.ScoreProfile  excel名称:SCore.xlsx
+---@field Background string 背景图
+---@field BiographyVoice string 小传语音Event名
+---@field Condition int[] 解锁条件
+---@field ConditionDes int 未解锁提示&
+---@field Content int 本段小传内容&
+---@field ID int 流水ID
+---@field Reward cfg.s3int[] 小传阅读奖励
+---@field ScoreID int *小传ID
+---@field Section int *小传段落
+---@field Title int 段落标题&

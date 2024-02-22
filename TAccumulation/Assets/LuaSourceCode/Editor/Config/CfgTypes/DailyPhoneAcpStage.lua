@@ -1,0 +1,12 @@
+﻿---@class cfg.DailyPhoneAcpStage  excel名称:DailyPhone.xlsx
+---@field BonusGroupID int Bonus组
+---@field BubbleGroupID int 气泡组ID
+---@field ConversationNameState string Conversation名
+---@field Index int 唯一ID
+---@field NodeIDState int 节点ID
+---@field RoutineID int 日程
+---@field StageSubType int 陪伴子类别
+---@field StageTime float[] 陪伴阶段时长
+---@field StageTips string ##Stage备注
+---@field StageType int 陪伴类别
+---@field Weight int 子类别权重

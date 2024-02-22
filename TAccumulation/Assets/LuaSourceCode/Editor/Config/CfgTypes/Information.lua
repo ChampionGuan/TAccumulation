@@ -1,0 +1,16 @@
+﻿---@class cfg.Information  excel名称:Information.xlsx
+---@field Content int 情报内容&
+---@field DeleteID int 删除情报
+---@field EffectDes int 情报描述&
+---@field Exp int 情报经验值
+---@field ID int 情报ID
+---@field ItemID int 情报经验提示用
+---@field Message int 解锁提示（废弃）&
+---@field Order int 排序ID
+---@field Reward cfg.s3int[] 亲密度奖励
+---@field RoleID int 搭档ID
+---@field TabID int[] 关联页签ID
+---@field TriggerCondition int 触发
+---@field Type int 是否为关键情报
+---@field Unlock int 是否默认解锁
+---@field Visible int 未获得是否显示

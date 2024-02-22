@@ -1,0 +1,8 @@
+﻿syntax = "proto3";
+package X3Data;
+
+message TrainingRoomRedPointData {
+    int64 stageId = 1;
+    bool isUnlock = 2; // 是否已经解锁
+    bool isOld = 3; // 是否查看过对应的页签
+}

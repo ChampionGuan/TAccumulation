@@ -1,0 +1,15 @@
+﻿---@class cfg.FXConfig  excel名称:BattleSkill.xlsx
+---@field DummyNodeName string 播放挂点
+---@field Duration Fix 生命周期
+---@field ID int 特效编号
+---@field IsFollow int 是否跟随
+---@field MaxRotation int[] 旋转随机终止值
+---@field MinRotation int[] 旋转随机起始值
+---@field MountType int 挂载类型
+---@field Note string #特效说明
+---@field Offset float[] 偏移
+---@field PrefabName string 特效文件
+---@field RandomRotateType int 特效旋转是否随机
+---@field Rotation int[] 旋转
+---@field Scale float[] 缩放
+---@field Type int 类型

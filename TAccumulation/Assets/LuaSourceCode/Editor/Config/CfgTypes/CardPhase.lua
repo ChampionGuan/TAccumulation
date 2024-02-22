@@ -1,0 +1,12 @@
+﻿---@class cfg.CardPhase  excel名称:Card.xlsx
+---@field CardEffectLevel int 被动技能等级
+---@field CostSelfNum int 提升到下一阶需要消耗同名碎片数量
+---@field CritValUP int 暴击提升千分比
+---@field GoldCost int 进阶金币消耗
+---@field ID int 流水号
+---@field MaxHPUP int 血量提升千分比
+---@field Mode int *进阶模式
+---@field PhaseID int *进阶等级
+---@field PhyAtkUP int 攻击提升千分比
+---@field PhyDefUP int 防御提升千分比
+---@field PlusForce int 附加战力

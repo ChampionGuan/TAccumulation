@@ -1,0 +1,12 @@
+﻿---@class cfg.MainUIOrnaments  excel名称:MainUI.xlsx
+---@field Des string ##说明
+---@field Drop string ##是否产出
+---@field ID int 唯一ID
+---@field ManLimit int 限定男主ID
+---@field Name string 饰品节点名称
+---@field Para int[] 参数
+---@field Pos cfg.vector3xml 饰品位置
+---@field PosDes string ##物件位置
+---@field Rot cfg.vector3xml 饰品朝向
+---@field StateLimit int 限定状态StateID
+---@field Type int 类型

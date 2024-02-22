@@ -1,0 +1,11 @@
+﻿---@class cfg.ArenaRank  excel名称:Arena.xlsx
+---@field Accomplishment cfg.s3int[] 段位达成奖励
+---@field BasisPoint int[] 基础分
+---@field ID int 唯一ID
+---@field Icon string 图标
+---@field Kvalue int K值
+---@field Name int 名称&
+---@field ResetValue int 重置积分
+---@field SeasonAward cfg.s3int[] 赛季结算奖励
+---@field ValueUpperLimit int 所需积分
+---@field WeekAward cfg.s3int[] 周排行奖励

@@ -1,0 +1,16 @@
+﻿---@class cfg.LoveDiary  excel名称:LovePointLevel.xlsx
+---@field ConditionCheck int[] 获取事件条件
+---@field DialogueID int 剧情收集关联剧本ID
+---@field EndConversation int 剧情收集结束Conversation
+---@field EndNodeID int 剧情收集结束NodeID
+---@field ID int ID
+---@field ManType int 男主ID
+---@field Mark int 事件标志类型
+---@field PLMsg int 女主文字&
+---@field Remark string ##策划备注
+---@field RoleMsg int 男主文字&
+---@field StartConversation int 剧情收集起始Conversation
+---@field StartNodeID int 剧情收集起始NodeID
+---@field Title int 事件标题&
+---@field Type int 事件大类
+---@field Weather int 天气

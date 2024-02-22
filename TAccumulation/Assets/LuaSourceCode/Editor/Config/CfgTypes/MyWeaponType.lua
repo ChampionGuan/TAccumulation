@@ -1,0 +1,12 @@
+﻿---@class cfg.MyWeaponType  excel名称:MyWeapon.xlsx
+---@field Animator string 系统展示状态机
+---@field Img string 武器类型图标
+---@field IsOpen int 当前版本是否开放
+---@field MissionInfo cfg.s2int[] 教学关卡Score和ID
+---@field PassStage int 解锁条件
+---@field Reward cfg.s3int[] 教学关卡奖励
+---@field Scence string 系统展示场景及相机位置
+---@field TeamPosition cfg.vector3xml 女主编队位置
+---@field TeamRotation cfg.vector3xml 女主编队旋转
+---@field TypeName int 武器类型名称&
+---@field WeaponType int 武器类型ID

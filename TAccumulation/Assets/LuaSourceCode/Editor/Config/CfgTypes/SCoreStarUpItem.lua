@@ -1,0 +1,16 @@
+﻿---@class cfg.SCoreStarUpItem  excel名称:Item.xlsx
+---@field AddCritVal int 增加暴击值
+---@field AddMaxHP int 增加生命值
+---@field AddPhyAtk int 增加物理攻击
+---@field AddPhyDef int 增加物理防御
+---@field AtrrAddList cfg.s2int[] 其他属性加成
+---@field CostGold int ##合成需消耗金币
+---@field CostItem1 cfg.s3int[] ##合成需消耗材料1
+---@field CostItem2 cfg.s3int[] ##合成需消耗材料2
+---@field CostItem3 cfg.s3int[] ##合成需消耗材料3
+---@field CostItem4 cfg.s3int[] ##合成需消耗材料4
+---@field Des string ##策划代号
+---@field ID int 道具ID
+---@field Name string ##道具名称
+---@field NeedLv int 填充需要S-Core等级
+---@field Type string ##类型

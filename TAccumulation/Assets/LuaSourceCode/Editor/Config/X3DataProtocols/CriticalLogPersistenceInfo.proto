@@ -1,0 +1,14 @@
+syntax = "proto3";
+package X3Data;
+
+//上传CriticalLog后留下的上传记录
+message CriticalLogPersistenceInfo {
+    string filePath = 1; //文件路径
+    string lastModifiedTime = 2; //文件的最后修改时间
+    CriticalLogUploadState uploadState = 3; //上传状态
+}
+
+enum CriticalLogUploadState {
+    Fail = 0; //失败
+    Success = 1; //成功
+}

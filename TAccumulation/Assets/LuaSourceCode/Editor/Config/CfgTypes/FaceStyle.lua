@@ -1,0 +1,17 @@
+﻿---@class cfg.FaceStyle  excel名称:Face.xlsx
+---@field BaseID int 模板脸资产对应的base id
+---@field DefaultBlush int 默认腮红
+---@field DefaultDecorate int 默认脸饰
+---@field DefaultEyeLeft int 默认美瞳（左）
+---@field DefaultEyeLiner int 默认眼线
+---@field DefaultEyeRight int 默认美瞳（右）
+---@field DefaultEyeshadow int 默认眼影
+---@field DefaultEyebrow int 默认眉妆
+---@field DefaultEyelash int 默认睫毛
+---@field DefaultHair int 默认头发
+---@field DefaultLip int 默认唇妆
+---@field DefaultSkin int 默认肤色
+---@field Des string ##备注
+---@field ID int 唯一ID
+---@field Icon string 预览小图标
+---@field SourceName string 映射资产名称

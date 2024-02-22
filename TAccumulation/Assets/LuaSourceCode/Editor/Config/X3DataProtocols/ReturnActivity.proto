@@ -1,0 +1,15 @@
+syntax = "proto3";
+package X3Data;
+
+message ReturnActivityData {
+  int64 primary                   = 1;
+  int64 StartTime                 = 2;  // 回流开始时间
+  int32 ReturnID                  = 3;  // 当前回流ID
+  int32 RoleID                    = 4;  //当前男主ID
+  int64 LastStartTime             = 5;  //上次回流开始时间
+  int64 OpenLoginLastUpdateTime   = 6;  // 回流开启后，登录更新时间
+  int32 OpenLoginDay              = 7;  // 回流开启后登录的天数
+  map<int32, bool> SignInRewardClaimed = 8;  // key：奖励天数
+  map<int32, bool> CardRead       = 9;  //回流贺卡是否读过
+  map<int32, int32> DoubleTimes   = 10; //双倍掉落次数
+}

@@ -1,0 +1,17 @@
+﻿---@class cfg.BattleLevelPropertyConfig  excel名称:BattleLevel.xlsx
+---@field Attack Fix 攻击力
+---@field Btn2SlotIDs cfg.s2int[] 技能按键映射
+---@field CritHurtAdd Fix 暴击伤害千分比
+---@field CritValue Fix 暴击值
+---@field Defence Fix 防御力
+---@field DisableAI boolean 是否关闭AI
+---@field ElementRatio Fix 元素适应系数千分比
+---@field ElementType Fix 元素类型
+---@field FinalDmgAddRate Fix 最终输出伤害提升倍率千分比
+---@field ID int ID
+---@field MaxHP Fix 最大血量
+---@field MaxTurnSpeed Fix 最大转向速度
+---@field Name string #描述
+---@field Speed Fix 移动速度
+---@field TurnAccelerationTime Fix 转向加速度时间
+---@field TurnSpeed Fix 转向速度

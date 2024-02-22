@@ -1,0 +1,62 @@
+syntax = "proto3";
+package X3Data;
+
+enum FirstPayState {
+    StateDefault = 0;  //默认状态 未充值
+    StateFinish  = 1;  // 可领取
+    StateReward  = 2;  // 已领取
+}
+
+message ChargeData {
+  int64  PrimaryKey = 1;
+  float Total = 2;  // 累计充值
+  map<int32, ChargeRecord> ChargeRecords = 3;  // <充值类型,商品记录>
+  map<int64, DeliverOrder> DeliverOrders = 4;  //<游戏内订单id,订单信息> 记录已经发货的订单
+  int64 LastChargeTime = 5;  // 最近一次充值时间
+  int32 PayLimitBirthday = 6; //// 记录客户端用于支付上报的生日，如200605 日服专用
+  repeated Order PaidOrders = 7;  // 已支付待发货的订单
+  FirstPayState FirstState = 8;  // 首充奖励
+}
+
+message ChargeRecord {
+  int64  PrimaryKey = 1;
+  map<uint32, int32> Charges = 2;  // <商品id,次数>
+}
+
+message DeliverOrder {
+  string OrderId = 1;  // 叠纸订单id
+  string ChannelOrderId = 2;  // 渠道单号
+  int64 UniqueId = 3;  // 游戏订单id（同下发的ProductId）
+}
+
+message PayInfo{
+  int64  PayID = 1; //payInfo id
+  string Name = 2; //商品名称
+  string Desc = 3; // 商品描述
+  string ProductId = 4; //渠道商品ID
+  string Money = 5; //商品价格
+  string Currency = 6; //价格币种
+  string Amount = 7; //带货币符号价格 例如 ₩1200
+  int32 Align = 8;// 货币符号位置 前置为0，后置为1
+  string Symbol = 9;//货币符号 例如₩
+  string  Pattern = 10;  //货币符号format格式 ₩%s
+}
+
+message Order {
+  int64 UniqueId = 1;   // 游戏订单id
+  string OrderId = 2;   // 叠纸订单id
+  uint64 Uid = 3;   // 玩家id
+  int32 DepositId = 4;   // 游戏商品id（商品的透传参数，用于判断具体是哪个系统的哪个商品）
+  int32 PayId = 5;   // 充值id
+  float Amount = 6;   // 充值金额
+  string ChannelOrderId = 7;   // 渠道单号
+  int32 Status = 8;   // 订单状态 0未支付 1已支付 2已完成
+  uint32 PlatformId = 9;   // 平台ID
+  int64 DeliverTime = 10;  // 发货时间
+  int32 ChargeOpType = 11;  // 充值类型（1：正常充值，3：异常充值，4：续订充值）
+  string ChannelProductId = 12;  // 渠道产品ID
+  string CurrencyType = 13;  // 币种
+  int64 CreateTime = 14;  // 订单创建时间
+  int64 PaidTime = 15;  // 支付完成时间
+}
+

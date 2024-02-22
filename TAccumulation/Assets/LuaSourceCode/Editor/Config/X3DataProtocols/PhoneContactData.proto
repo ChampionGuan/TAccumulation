@@ -1,0 +1,110 @@
+syntax = "proto3";
+package X3Data;
+import "Photo.proto";
+
+enum PhoneContactHeadState {
+  ChangeFail = 0;
+  ChangeWaiting = 1;
+  ChangeSuccess = 2;
+}
+
+enum PhoneConstChatBackgroundType {
+  Default = 0;
+  PhotoType = 1;
+  CardType = 2;
+}
+
+enum PhoneContactHeadType {
+  DefaultHead = 0;
+  ScoreHead = 1;
+  CardHead = 2;
+  ImgHead = 3;
+  PhotoHead = 4;  // 静态图片
+  PersonalHead = 5;
+}
+
+
+message PhoneContactHead {
+  int64 ContactId = 1; // 联系人ID
+  int32 Type = 2;
+  int32 ScoreId = 3;  // CONST_SCORE_HEAD
+  int32 CardId = 4;  // CONST_CARD_HEAD
+  Photo Photo = 5;  // CONST_IMG_HEAD
+  int32 PhotoId = 6;  // CONST_PHOTO_HEAD
+  int64 LastSetTime = 7;  // 上次修改时间
+  int32 PersonalHeadID = 8;
+}
+
+
+message PhoneContactSign {
+  string Sign = 1;
+  int64 Time = 2;  // 设置签名时间
+  int32 SignId = 3;  // 签名id
+}
+
+message PhoneContactMoment {
+  int64 ContactId = 1;// 联系人ID
+  Photo CoverPhoto = 2;
+  int32 CoverId = 3;  // 封面ID
+}
+
+message PhoneContactBubble {
+  int64 ContactId = 1;// 联系人ID
+  int32 ID = 2;
+}
+
+
+message PhoneContactChatBackground {
+  int64 ContactId = 1;// 联系人ID
+  int32 Type = 2;
+  int32 PhotoId = 3;
+  int32 CardId = 4;
+}
+
+message ContactNudge
+{
+  int64 Contact = 1;
+  string Sign = 2;  // 完整
+  string Verb = 3;  // 戳的动词
+  string Suffix = 4;  // 后缀
+  int32 AutoPatID = 5; //彩蛋后缀Id
+}
+
+message PhoneContactHeadImgCache {
+  int64 ContactId = 1; // 联系人ID
+  string Url = 2;
+  PhoneContactHeadState State = 3;  // 审核状态
+  int64 SetTime = 4;  // 设置时间，用于处理超时
+}
+
+
+message PhoneContactData {
+  int64 LastRefreshTime = 1;  // 上次刷新时间
+  map<int32, bool> HeadPhotos = 2;  // 静态头像 k:静态头像id v:是否为New
+  map<int32, bool> Signs = 3;  // 签名 k:签名id v:是否为New
+  map<int32, bool> MomentCovers = 4;  // 朋友圈封面 k:封面id v:是否为New
+  map<int32, bool> Bubbles = 5;  // 聊天气泡
+  map<int32, bool> ChatBackgrounds = 6;  // 聊天背景
+}
+
+message PhoneContact {
+  int64 ID = 1;   // 联系人ID
+  string Remark = 2;   // 备注
+  int32 CardId = 3;   // 背景
+  PhoneContactHead Head = 4;   // 头像
+  PhoneContactHeadImgCache HeadImgCache = 5;   // 图片头像缓存
+  PhoneContactSign Sign = 6;   // 签名
+  repeated PhoneContactSign HistorySigns = 7;  // 历史签名, 只记录男主
+  PhoneContactMoment Moment = 8;  // 朋友圈
+  PhoneContactBubble Bubble = 9;  // 气泡
+  PhoneContactChatBackground ChatBackground = 10;  // 聊天背景
+  bool PendantSwitch = 11;  // 挂件开关
+  map<int32, bool> ChangeHeadHistory = 12;  // 更换头像历史记录
+  int64 LastChangeTime = 13;  // 主动更换头像时间
+  int32 ChangeHeadTimes = 14; //换头像次数
+  int32 ChangeBubbleTimes = 15; //换气泡次数
+  int32 ChangeMomentTimes = 16; //换朋友圈次数
+  int32 ChangeNudgeTimes = 17; //更换戳一戳后缀次数
+  bool  NameUnlock = 18;//联系人的名称是否解锁
+  ContactNudge Nudge = 19;  // 戳一戳信息
+}

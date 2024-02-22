@@ -1,0 +1,13 @@
+﻿---@class cfg.PhotoBackground  excel名称:Photo.xlsx
+---@field DefaultLight int 默认人物光照
+---@field DefaultPosInfo string 初始镜头和位置信息
+---@field Des string ##说明
+---@field ID int 唯一ID
+---@field Icon string 背景icon
+---@field ImgResource string 2D面片资源
+---@field IsBasePackage int 是否进A包
+---@field ModelGroup int[] 所属模式组
+---@field Place int[] 包含拍照点
+---@field Role int 所属角色
+---@field Scene string 3D场景
+---@field Type int 类型

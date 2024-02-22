@@ -1,0 +1,35 @@
+syntax = "proto3";
+package X3Data;
+
+// 测试proto的类型名枚举
+enum CommonGestureOperatedModeRotateModel {
+    Sphere = 0; //球面
+    Ellipsoid = 1; //椭球面
+}
+
+enum CommonGestureOperatedModeDragState {
+    DragStart = 0; //拖拽开始
+    Dragging = 1; //拖拽中
+    DragEnd = 2; //拖拽结束
+    HorizontalReboundEnd = 3; //水平回弹结束
+}
+
+//CommonGestureOperatedMode 的功能Flag
+enum CommonGestureOperatedModeFunctionFlag {
+    CommonGestureOperatedModeFunctionNone = 0; //无
+    HorizontalRotate = 1; //水平旋转
+    HorizontalRebound = 2; //水平回弹
+    VerticalRotate = 4; //垂直旋转
+    VerticalRebound = 8; //垂直回弹
+    VerticalMove = 16; //垂直移动
+    Zoom = 32; //拉近拉远
+}
+
+message CommonGestureOperatedModeData {
+    int64 id = 1; //id
+    CommonGestureOperatedModeDragState dragState = 2; //拖拽状态
+    float yawAngle = 3; //水平旋转角度
+    repeated float yawLimits = 4; //水平旋转的极值(最小值+回弹范围，最小值，最大值，最大值+回弹范围)依次增大
+    float initYawAngle = 5; //水平旋转的初始角度
+    float initPitchAngle = 6; //垂直旋转的初始角度
+}

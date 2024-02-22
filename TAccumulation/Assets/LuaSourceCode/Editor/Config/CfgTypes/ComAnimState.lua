@@ -1,0 +1,14 @@
+﻿---@class cfg.ComAnimState  excel名称:ComAnimState.xlsx
+---@field CarryPos int 继承Pos（默认）
+---@field Crossfade float Crossfade时长（默认）
+---@field Des string 描述
+---@field GroupDes string 组
+---@field Index int 唯一Key
+---@field IsDefault int 设为Default（默认）
+---@field PartTypeLimit int[] 部件类型限制
+---@field PlayDes string ##播放方式（默认）
+---@field PlayType int 播放方式（默认）
+---@field SourcePath string 资源名/资源路径
+---@field SourceType int 资源类型
+---@field StateName string 状态名
+---@field TypeDes string ##资源类型

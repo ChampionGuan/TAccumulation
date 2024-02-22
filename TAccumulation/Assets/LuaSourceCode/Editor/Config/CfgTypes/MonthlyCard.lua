@@ -1,0 +1,12 @@
+﻿---@class cfg.MonthlyCard  excel名称:MonthlyCard.xlsx
+---@field Banner string 月卡底图
+---@field BuyReward cfg.s3int[] 购买返利
+---@field CardFunctionGroup int[] 月卡特权组
+---@field CardType int 月卡类型
+---@field DailyReward cfg.s3int[] 每日返利
+---@field Duration int 激活时长
+---@field ID int 唯一ID
+---@field Name int 月卡名称&
+---@field PowerExplan int 特权描述&
+---@field Price int ##购买价格RMB
+---@field Slogan int 月卡广告语&

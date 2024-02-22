@@ -1,0 +1,54 @@
+syntax = "proto3";
+package X3Data;
+
+enum MailReward {
+    MailRewardNo   = 0;  // 邮件没奖励
+    MailRewardCan  = 1;  // 邮件可领取奖励
+    MailRewardDone = 2;  // 邮件已领取奖励
+}
+
+enum MailType {
+    MailTypeSystem   = 0;  // 系统邮件
+    MailTypePlatform = 1;  // 个人平台邮件
+    MailTypeGlobal   = 2;  // 全服邮件
+}
+
+enum MailParamType {
+    MailParamDefault    = 0;  // 占位，没用
+    MailParamBattlePass = 1;  // bp
+}
+
+message MailParam {
+	int64 Id 				= 1;
+    MailParamType ParamType = 2;  // 类型
+    repeated int32 Params   = 3;  // 自定义参数
+}
+
+message MailRewardItem
+{
+	int64 Uid	= 1;
+	int64 Id 	= 2;  // 道具ID
+    int32 Type 	= 3;  // 道具类型
+    int32 Num  	= 4;  // 道具数量
+}
+
+
+message Mail {
+    int64 MailId                   	= 1;   // 邮件ID
+    int64 RecvId                   	= 2;   // 收件人ID
+    string Recver                  	= 3;   // 收件人
+    int64 SendId                   	= 4;   // 发送人ID
+    string Sender                   = 5;   // 发送人
+    int64 SendTime                  = 6;   // 发送时间
+    string Title                    = 7;   // 标题
+    string Content                  = 8;   // 内容
+    int64 ExpTime                   = 9;   // 过期时间
+    int32 IsRead                    = 10;  // 是否阅读  0：未读 1：已读
+    MailReward IsReward             = 11;  // 是否有奖励  0：没奖励 1：邮件可领取奖励 2：已领奖
+    repeated MailRewardItem Rewards          = 12;  // 奖励
+    int32 TemplateId                = 13;  // 模板ID
+    repeated string TemplateArgs    = 14;  // 模板参数
+    MailType MailType               = 15;  // 0系统邮件 1个人平台邮件 2全服邮件
+    int64 StaticID                 	= 16;  // 系统动态邮件:0，个人平台邮件：平台邮件id，全服邮件：平台全服邮件id，系统静态邮件：静态id（目前暂时没有系统静态邮件）
+    repeated MailParam CustomParams = 17;  // 自定义透传参数（可能有多个，可以处理不同的奖励物品和参数）
+}

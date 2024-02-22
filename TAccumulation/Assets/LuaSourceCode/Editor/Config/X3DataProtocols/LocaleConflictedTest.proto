@@ -1,0 +1,23 @@
+﻿syntax = "proto3";
+package X3Data;
+
+//测试基础数据类型的X3Data
+message ConflictedTest{
+  int64 primaryInt64Key    = 1;
+  uint32 uint32Field     = 2; //其实是uint32
+  int64 int64Field   =  3;
+  int32 int32Field    =  4;
+  string strField    = 5;
+  bool boolField     = 6;
+  float doubleField   = 7;
+  double floatField   = 8;// 其实是double
+  double doubleField5   = 9;// 其实是double
+}
+
+enum TestEnum1{
+  X = 0;
+}
+
+enum TestEnum2{
+  X1 = 0;
+}

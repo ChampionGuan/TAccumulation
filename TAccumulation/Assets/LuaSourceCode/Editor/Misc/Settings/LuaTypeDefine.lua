@@ -1,0 +1,29 @@
+﻿---请在本文件里定义全局的类型或类型别名，类型名（或别名）尽量使用大驼峰
+
+---@alias Float number
+---@alias float number
+---@alias integer number
+---@alias uint number
+---@alias String string
+---@alias int number
+---@alias bool boolean
+---@alias GameObject UnityEngine.GameObject
+---@alias Transform UnityEngine.Transform
+---@alias RectTransform UnityEngine.RectTransform
+---@alias UObject UnityEngine.Object
+---@alias Texture2D UnityEngine.Texture2D
+---@alias Sprite UnityEngine.Sprite
+---@alias Color UnityEngine.Color
+---@alias Image UnityEngine.UI.Image
+---@alias RectInt UnityEngine.RectInt
+---@alias Rect UnityEngine.Rect
+---@alias Byte System.Byte
+---@alias ObjLinker PapeGames.X3UI.ObjLinker
+---@alias DirectorWrapMode UnityEngine.Playables.DirectorWrapMode
+---@alias GridView PapeGames.X3UI.GridView
+---@alias ListView PapeGames.X3UI.ListView
+---@alias X3ScrollView PapeGames.X3UI.X3ScrollView
+---@alias TabMenu PapeGames.X3UI.TabMenu
+---@alias X3DropDown PapeGames.X3UI.X3DropDown
+---@alias PointerEventData UnityEngine.EventSystems.PointerEventData
+---@alias ExpandView PapeGames.X3UI.ExpandView

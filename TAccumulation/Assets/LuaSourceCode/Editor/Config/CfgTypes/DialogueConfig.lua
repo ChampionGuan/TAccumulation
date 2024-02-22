@@ -1,0 +1,12 @@
+﻿---@class cfg.DialogueConfig  excel名称:BattleDialogue.xlsx
+---@field ID string *唯一ID
+---@field IconID int 头像编号
+---@field Key string #对话key
+---@field LoveLevel int #亲密度
+---@field RespondActorType int 延时应答人
+---@field RespondKey string 延时应答Key
+---@field RespondTime int 延时应答时间（单位/毫秒）
+---@field ScoreID int #模板id
+---@field ShowTime int 显示时间（单位/毫秒）
+---@field Sound string 对话语音
+---@field Text int 对话内容&

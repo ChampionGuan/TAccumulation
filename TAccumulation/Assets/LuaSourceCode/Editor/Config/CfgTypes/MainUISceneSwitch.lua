@@ -1,0 +1,15 @@
+﻿---@class cfg.MainUISceneSwitch  excel名称:MainUI.xlsx
+---@field Desc1 string ##说明
+---@field Desc2 string ##说明
+---@field EndTime string 时间条件-切换结束时间
+---@field ID int 唯一ID
+---@field OtherCondition int 其他切换条件
+---@field Priority int 优先级
+---@field StartTime string 时间条件-切换开始时间
+---@field SwitchGroup int 组ID
+---@field SwitchScene int 时间类型
+---@field TimePara1 int 时间参数1
+---@field TimePara2 int 时间参数2
+---@field TimePara3 int 时间参数3
+---@field TimePara4 int 时间参数4
+---@field TimePara5 int 时间参数5

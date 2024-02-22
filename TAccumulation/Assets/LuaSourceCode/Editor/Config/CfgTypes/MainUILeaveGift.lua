@@ -1,0 +1,14 @@
+﻿---@class cfg.MainUILeaveGift  excel名称:MainUI.xlsx
+---@field Des string ##策划代号
+---@field ExCondition int 额外条件要求
+---@field ExDrop cfg.s2int[] 额外随机奖励DropID
+---@field FirstExReward cfg.s3int[] 首次获得时的额外奖励
+---@field ID int 唯一ID
+---@field ItemID int 道具ID
+---@field ManLimit int[] 限定男主ID
+---@field Name string ##道具名称
+---@field NeedTimeMax int 需要挂机时间最大值（分）
+---@field NeedTimeMin int 需要挂机时间最小值（分）
+---@field PlayerLvMax int 最大玩家等级要求
+---@field PlayerLvMin int 最小玩家等级要求
+---@field Weight int 权重

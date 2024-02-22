@@ -1,0 +1,12 @@
+﻿---@class cfg.GemCoreBaseInfo  excel名称:GemCore.xlsx
+---@field ItemID int 芯核ID
+---@field MainAttrGroup int 主属性随机库
+---@field Name int ##芯核名称
+---@field Rare int 稀有度
+---@field SiteID int 位置ID
+---@field SubAttrChance int 副属性概率
+---@field SubAttrGroup int 副属性随机库
+---@field SubAttrInitMax int 副属性初始最大条目数
+---@field SubAttrInitMin int 副属性初始最小条目数
+---@field SubAttrMax int 副属性最大条目数
+---@field SuitID int 芯核套装ID

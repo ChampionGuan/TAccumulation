@@ -1,0 +1,60 @@
+syntax = "proto3";
+package X3Data;
+
+// 测试proto的类型名枚举
+enum X3DataTestUsageMessageType {
+    ETypeTestPureProtoTypeData = 0;
+    ETypeRepeatedTestData = 1;
+    ETypeMapTestData = 2;
+    ETypeCombineTestData = 3;
+}
+
+//测试基础数据类型的X3Data
+message TestPureProtoTypeData{
+    int64 primaryInt64Key    = 1;
+    uint32 uint32Field     = 2; //其实是uint32
+    int32 int32Field    =  3;
+    int64 int64Field   =  4;
+    string strField    = 5;
+    bool boolField     = 6;
+    float floatField   = 7;
+    double doubleField   = 8;// 其实是double
+}
+
+//测试repeated的X3Data
+message RepeatedTestData
+{
+    string primaryStrKey                             = 1;
+    repeated TestPureProtoTypeData x3DataTestArray   = 2; //repeated X3Data
+    repeated int32 int32TestArray                    = 3; //repeated int32
+}
+
+//测试Map的X3Data
+message MapTestData {
+    string id = 1;
+    map<int32, string> int32StringMap                = 2; //map<int32, string>
+    map<string, TestPureProtoTypeData> x3DataTestMap = 3; //x3Data的测试map
+    string TestString                                = 4; //用于测试的字符串
+}
+
+// 测试合集
+message CombineTestData {
+    int64 primaryInt64Key                            = 1;
+    uint32 uint32Field                               = 2;
+    int32 int32Field                                 = 3;
+    int64 int64Field                                 = 4;
+    string strField                                  = 5; // strField
+    bool boolField                                   = 6; // boolField
+    repeated TestPureProtoTypeData x3DataTestArray   = 7; //repeated X3Data
+    repeated int32 int32TestArray                    = 8; //repeated int32
+    map<int32, string> int32StringMap                = 9; //map<int32, string>
+    map<uint32, TestPureProtoTypeData> x3DataTestMap = 10; //x3Data的测试map
+    TestPureProtoTypeData x3Data                     = 11; //x3Data
+    X3DataTestUsageMessageType enumTestType          = 12;
+}
+
+//用于测试关系传递性的数据
+message AssociationTestData{
+    int64 primaryInt64Key                         = 1;
+    repeated CombineTestData combineTestDataArray = 2;
+}

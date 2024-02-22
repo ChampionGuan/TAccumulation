@@ -1,0 +1,47 @@
+syntax = "proto3";
+package X3Data;
+
+message AccompanyTypeRecord {
+    int64  PrimaryKey    = 1;
+    int32 Cnt      = 2;  // 次数
+    int32 Duration = 3;  // 时长 单位分钟
+}
+
+message AccompanyDayRecord {
+    int64  PrimaryKey    = 1;
+    map<int32, AccompanyTypeRecord> Records = 2;  // key:陪伴类型 value:类型陪伴记录
+}
+
+message AccompanyYearRecord {
+    int64  PrimaryKey    = 1;
+    map<int32, AccompanyDayRecord> Records = 2;  // key：天数 value：每日陪伴记录
+}
+
+message AccompanyRoleRecords {
+    int64  PrimaryKey    = 1;
+    map<int32, int64> CounterRefreshTime   = 2;  // 类型刷新时间 key:类型 value:刷新时间
+    map<int32, int32> WeekRecord           = 3;  // 周陪伴记录 key：类型 value：天数
+    map<int32, int32> MonthRecord          = 4;  // 月陪伴记录 key：类型 value：天数
+    map<int32, int32> ConsecutiveWeekOne   = 5;  // 陪伴一次连续周数  key：类型 value：连续次数
+    map<int32, int32> ConsecutiveWeekThree = 6;  // 陪伴三次连续周数  key：类型 value：连续次数
+	map<int32, AccompanyYearRecord> YearRecords = 7;  // key：年份 value:每年陪伴记录
+    map<int32, int32> WeekRecordCnt         = 8;  // 陪伴记录 key:类型 value：次数 每周刷新 // 客户端需要计算周任务
+}
+
+message AccompanyRoleData {
+    int64 RoleId    = 1;
+    int32 Type           = 2;  // 陪伴类型
+    int64 StartTime      = 3;  // 开始时间
+    int64 ExpectDuration = 4;  // 期待陪伴时长
+    int64 AccumulateTime = 5;  // 累积陪伴时长
+    int64 OfflineDuration = 6; // 离线时间
+    int64 Duration = 7;        // 本次陪伴时长
+    map<int32, int64> LastAccompanyTimes = 8;          // 上次健身时间
+    int64 WaitDuration                      = 9;  // 续期等待时长
+    AccompanyRoleRecords Records = 10;
+}
+
+message AccompanyData {
+    int64  PrimaryKey    = 1;
+    map<int32, AccompanyRoleData> RoleMap = 2;  // key:男主id value:男主陪伴数据
+}

@@ -1,0 +1,13 @@
+﻿---@class cfg.Trial  excel名称:Trial.xlsx
+---@field AdviseDescription int 平台建议&
+---@field Drama int 挑战次数
+---@field ElementShow string 元素显示
+---@field ID int 唯一ID
+---@field LevelList int[] 副本列表
+---@field MonsterDescription int 公开资料&
+---@field MonsterName int 怪物名称&
+---@field Name int 玩法名称&
+---@field OpenDayDescription int 开放日描述&
+---@field OpenTimeDetail string 开放日
+---@field OpenTimeType int 开放日类型
+---@field OutPutDescription int 产出描述&

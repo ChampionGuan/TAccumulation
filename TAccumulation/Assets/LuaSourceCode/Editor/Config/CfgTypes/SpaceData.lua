@@ -1,0 +1,17 @@
+﻿---@class cfg.SpaceData  excel名称:CommonStageEntry.xlsx
+---@field AllBoyReviveCount int 男主复活次数
+---@field AllGirlReviveCount int 女主复活次数
+---@field AllyBoyTalkNameIndex int 男主沟通索引id
+---@field AutoBattleFlag int 关闭自动战斗
+---@field BattleEvent int[] 装载副本事件
+---@field GuideID int GuideID
+---@field LevelID int 副本ID
+---@field LevelLogic string 关卡逻辑
+---@field MapID int 场景ID
+---@field Name int 副本名称&
+---@field Note int 副本说明&
+---@field PreBattleDialogID int 战前对话ID
+---@field RootPos2Rot cfg.s3int[] 出生参考点
+---@field RootPos2RotToEnermy cfg.s3int[] 竞技场敌方出生参考点
+---@field TimeLimit int 时间限制
+---@field WwiseID int[] 场景音效资源

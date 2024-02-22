@@ -1,0 +1,11 @@
+﻿---@class cfg.PhoneMsg  excel名称:PhoneMsg.xlsx
+---@field Contact int 对方ID
+---@field Conversation int 对话ID
+---@field DescForDesigner string ##策划用备注
+---@field ID int 唯一ID
+---@field IsShow int 未获得是否展示
+---@field Name int 信息名称&
+---@field Principal int 是否主动激活
+---@field Reward cfg.s3int[] 完成奖励
+---@field SubType int 信息子类
+---@field Type int 信息类别

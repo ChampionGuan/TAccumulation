@@ -1,0 +1,16 @@
+﻿---@class cfg.SCorePhase  excel名称:SCore.xlsx
+---@field AttrAddList cfg.s2int[] 其他属性加成
+---@field Caption int 进阶标题&
+---@field Description int 进阶效果描述&
+---@field Description2 string ##效果描述
+---@field ID int 唯一ID
+---@field LvGrowCritVal int 暴击率成长（除以100后计算）
+---@field LvGrowMaxHP int 生命值成长(除以100后计算)
+---@field LvGrowPhyAtk int 物理攻击成长（除以100后计算）
+---@field LvGrowPhyDef int 物理防御成长（除以100后计算）
+---@field NeedGold int 激活深化节点消耗金币
+---@field NeedItem cfg.s3int[] 激活深化节点消耗道具
+---@field PhaseID int *深化组ID
+---@field PhaseLv int *深化阶数
+---@field ReplaceSkillType int 替换技能类型
+---@field SkillLevelMaxInc cfg.s2int[] 提升技能等级上限类型

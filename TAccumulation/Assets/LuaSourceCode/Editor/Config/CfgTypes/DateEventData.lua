@@ -1,0 +1,14 @@
+﻿---@class cfg.DateEventData  excel名称:DateEventData.xlsx
+---@field Action string 剧本
+---@field Condition int 条件
+---@field Delay int 延迟时长（秒）
+---@field DesignDes string #策划备注
+---@field EventGroup int 游戏阶段事件组ID
+---@field Id int 事件ID
+---@field Interval int 间隔时长（秒）
+---@field MaxTimes int 最大次数
+---@field Mode int 模式
+---@field NeedCheck int 是否服务器校验剧情
+---@field Pause int 暂停
+---@field Priority int 优先级
+---@field State string 阶段

@@ -1,0 +1,15 @@
+﻿---@class cfg.ServerConfig  excel名称:服务器配置.xlsx
+---@field AndroidApkUrl string 安卓新包地址
+---@field AndroidApkVersion string 安卓强更版本
+---@field AndroidCdn string 安卓CDN地址
+---@field AnnouncementURL string 公告请求地址
+---@field Audit int 审核服标志
+---@field Id string 服务器ID#
+---@field IosApkUrl string 苹果新包地址
+---@field IosApkVersion string 苹果强更版本
+---@field IosCdn string 苹果CDN地址
+---@field LoginAddr string 登录服务器地址
+---@field PcApkVersion string PC强更版本
+---@field PcCdn string PCCDN地址
+---@field Test int 测试标志
+---@field Timezone int 所用时区

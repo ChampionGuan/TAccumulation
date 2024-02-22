@@ -1,0 +1,11 @@
+﻿---@class cfg.SkillLevelConfig  excel名称:BattleSkill.xlsx
+---@field CD Fix CD
+---@field DamageIDs int[] 技能伤害ID
+---@field Desc string 技能描述
+---@field Filename string 技能资源
+---@field Level int 技能等级*
+---@field LevelID int 技能等级编号
+---@field SkillID int 技能编号*
+---@field SkillName string ##技能名
+---@field TemplateArg undefined lua 模板非常规参数列表
+---@field Whos int ##所属角色

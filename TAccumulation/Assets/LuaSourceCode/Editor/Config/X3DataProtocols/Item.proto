@@ -1,0 +1,20 @@
+syntax = "proto3";
+package X3Data;
+
+message Item {
+    int64 Id   = 1;  // 道具ID
+    int32 Type = 2;  // 道具类型
+    int32 Num  = 3;  // 道具数量
+}
+
+message SpItem {
+    int64 Id      = 1;  // 时效道具ID
+    int32 Num     = 2;  // 时效道具数量
+    int32 Mid     = 3;  // 主道具ID,来自item表主键
+    int64 ExpTime = 4;  // 过期时间
+}
+
+message Coin{
+	int64 Key = 1;
+	int64 Value = 2;
+}

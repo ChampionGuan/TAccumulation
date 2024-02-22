@@ -1,0 +1,7 @@
+syntax = "proto3";
+package X3Data;
+
+message ActivityDiyModel {
+	int64 ActivityID         = 1;
+    map<int32, int32> DiyMap = 2;
+}

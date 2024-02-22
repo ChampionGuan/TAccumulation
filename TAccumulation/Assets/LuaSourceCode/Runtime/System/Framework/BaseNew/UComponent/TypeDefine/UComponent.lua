@@ -1,0 +1,36 @@
+﻿--auto generate do not modify--
+
+---@class Framework.UComponent
+local UComponent = {
+	BaseComponent = 1,
+	Button = 2,
+	Component = 3,
+	DragHandler = 4,
+	Dropdown = 5,
+	ExpandView = 6,
+	LoadOrSetMenu = 7,
+	MultiListener = 8,
+	SetOrGetValue = 9,
+	GIFImage = 10,
+	Image = 11,
+	InputField = 12,
+	Joystick = 13,
+	ListView = 14,
+	LongPressHandler = 15,
+	MilestoneSlider = 16,
+	MotionHandler = 17,
+	NumericText = 18,
+	ScrollView = 19,
+	Slider = 20,
+	SoundFXHandler = 21,
+	StyleEnum = 22,
+	SwitchButton = 23,
+	TabMenu = 24,
+	Text = 25,
+	ToggleButton = 26,
+	ToggleButtonGroup = 27,
+	TransformSizeChangingDispatcher = 28,
+	UIBaseEnum = 29,
+	X3TabMenu = 30,
+}
+return UComponent

@@ -1,0 +1,13 @@
+﻿---@class cfg.ItemTreasure  excel名称:Item.xlsx
+---@field ArrayDrop int[] 掉落
+---@field CertainlyDropShow cfg.s3int[] 掉落展示必定
+---@field ChooseItems cfg.s3int[] 自选内容
+---@field Condition int 开启条件
+---@field GuaranteeItems cfg.s3int 保底奖励
+---@field Id int ID
+---@field Mark string #备注
+---@field MarkedWord int 掉落提示&
+---@field OpenMax int 最大使用数量
+---@field OpenSelf int 是否自动开启
+---@field ProbableDropShow cfg.s3int[] 掉落展示概率
+---@field Type int 宝箱类型

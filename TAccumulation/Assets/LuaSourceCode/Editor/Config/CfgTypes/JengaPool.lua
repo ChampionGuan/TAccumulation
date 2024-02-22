@@ -1,0 +1,12 @@
+﻿---@class cfg.JengaPool  excel名称:Jenga.xlsx
+---@field BlockPrefab string 块的预制体名
+---@field ColorType int 颜色类型
+---@field Des string #策划备注
+---@field Index int 唯一Key
+---@field MaxFriction int 最大摩擦系数（0~100）
+---@field MinFriction int 最小摩擦系数（0~100）
+---@field NumType int 数字类型
+---@field PoolID int 块池ID
+---@field PutNumMax int 单轮放入最多个数
+---@field PutNumMin int 单轮放入最少个数
+---@field Weight int 权重

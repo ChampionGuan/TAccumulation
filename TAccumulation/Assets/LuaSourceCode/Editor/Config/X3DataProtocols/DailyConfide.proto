@@ -1,0 +1,26 @@
+syntax = "proto3";
+package X3Data;
+
+message DailyConfideData {
+  int64 Id = 1;
+  string Token = 2;  // aliyun token
+  int32 TokenExpireTime = 3;  // token 到期的时间戳
+  map<int32, int32> LastDailyPhoneTime = 4;  // 上一次倾诉开始的时间，key 男主id value 时间戳
+  map<int32, int32> VoiceExpireTime = 5;  // 传声筒到期的时间戳，key 男主id value 时间戳
+  map<int32, DailyConfideCompleteRecord> Records = 6;  //key 男主id value 不同男主记录的数据
+}
+
+message DailyConfideCompleteRecord {
+  int64 Id = 1;
+  DailyConfideRecord TodayRecord = 2; //今天记录的倾诉数据，只记录最新的
+  DailyConfideRecord YesterdayRecord = 3;//昨天记录的倾诉数据，只记录昨天最新的
+}
+
+message DailyConfideRecord {
+   int64 Id = 1; //详情见[LYDJS-37154]
+   int64 RoleId = 2;
+   int64 Emotion = 3;
+   int64 MatterType = 4;
+   int64 SubMatterType = 5;
+   int64 NewTimestamp = 6;
+}

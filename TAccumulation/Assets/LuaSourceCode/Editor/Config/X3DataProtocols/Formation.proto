@@ -1,0 +1,22 @@
+syntax = "proto3";
+package X3Data;
+
+
+//Formation相关数据
+message Formation {
+    int64 Guid     = 1;         // 阵型Guid, score限定关卡时允许为0,此时不检查guid，也不保存阵型
+    int32 WeaponId = 2;         // 武器id
+    int32 PlSuitId = 3;         // 女主战斗套装id
+    int32 SCoreID  = 4;         // sCoreID
+    map<int32, int32> CardIDs = 5;  // key:槽位 value：思念ID
+}
+
+//PreFabFormation相关数据
+message PreFabFormation {
+    int64 PreFabID = 1;         // 预设编队ID
+    string Name = 2;            // 名字
+    int32 WeaponId = 3;         // 武器id
+    int32 PlSuitId = 4;         // 女主战斗套装id
+    int32 SCoreID  = 5;         // sCoreID
+    map<int32, int32> CardIDs = 6;  // key:槽位 value：思念ID
+}

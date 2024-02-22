@@ -1,0 +1,20 @@
+﻿syntax = "proto3";
+package X3Data;
+
+enum RadioRecordType{
+    Radio = 0;  
+    ASMR  = 1;  
+}
+
+//广播剧与ASMR共用
+message RadioTimeRecord {
+  int64 RadioId = 1;
+  int64 SubId = 2; 
+  int64 Time = 3; ///单次统计间隔内的播放时长
+  int64 LastRecordTime = 4;
+  int64 HandleOrder = 5; //用于在后台任意切歌后，下次上线能正确发送最后播放的是哪一首
+  RadioRecordType RecordType = 6;
+  int64 TotalTime = 7; //歌曲总的播放时间
+  repeated int64 SignList = 8; //用于数据记录
+  bool Upload = 9;  //上传过的标记
+}

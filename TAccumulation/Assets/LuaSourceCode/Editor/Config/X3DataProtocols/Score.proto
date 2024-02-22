@@ -1,0 +1,20 @@
+syntax = "proto3";
+package X3Data;
+
+
+//Score相关数据
+message SCore {
+  int64 Id = 1;   // ID
+  int32 SuitID = 2;  // 战斗套装id
+  uint32 CTime = 3;  // 首次获得/创建时间
+  map<int32, bool> Voices = 4;  // 激活的语音
+}
+
+//存储Card-Score的关联关系
+message Card2ScoreCfgData {
+  int64 CardId = 1;   //CardId
+  int32 SCoreId = 2;  //SCoreId
+}
+
+
+

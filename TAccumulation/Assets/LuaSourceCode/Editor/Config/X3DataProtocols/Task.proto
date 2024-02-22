@@ -1,0 +1,31 @@
+syntax = "proto3";
+package X3Data;
+
+enum TaskStatus {
+  TaskCanFinish = 0;//可完成
+  TaskNotFinish = 1; //未完成
+  TaskFinish = 2; //已完成
+}
+
+message Task {
+  int64 ID = 1;  // 任务ID
+  int32 Num = 2;  // 次数
+  bool IsComplete = 3;  // 是否已完成
+  int32 RewardCnt = 4;  // 循环任务领奖次数
+  int64 CompleteTm = 5;  // 完成时间，成就以及部分任务使用
+  int32 CurProgressNum = 6;//任务当前进度 仅做显示使用
+  int32 NeedNum = 7;//任务总进度 仅做显示使用
+  TaskStatus Status = 8; //任务状态
+  bool IsShow = 9;//当前任务是否可显示
+  bool IsAutoReward = 10;//是否自动领奖
+}
+
+message TasksByConditionType {
+  int64 primaryKey = 1;
+  map<int32, int32>  Tasks = 2;  // 任务ID
+}
+
+message TasksByTaskType {
+  int64 primaryKey = 1;
+  map<int32, int32>  Tasks = 2;  // 任务ID
+}

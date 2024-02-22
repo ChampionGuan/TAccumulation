@@ -1,0 +1,7 @@
+syntax = "proto3";
+package X3Data;
+
+message Achievement {
+  int64 primaryKey = 1;   // 主键
+  repeated int32 HadShowAchievements = 2;  //侧边栏展示过的成就ID数组，用来决定是否打开侧边栏
+}

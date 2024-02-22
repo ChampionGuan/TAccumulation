@@ -1,0 +1,27 @@
+syntax = "proto3";
+package X3Data;
+
+enum ActivityTurntableDropState {
+  ActivityTurntableDropStateNormal    = 0;  //正常状态
+  ActivityTurntableDropStateTransfer  = 1;  //转化状态
+  ActivityTurntableDropStateRemove    = 2;  //移除状态
+}
+
+message ActivityTurntableData {
+  int64 ActivityID              = 1;
+  map<int32, int32> DropCount   = 2;  // ActivityTurntableDrop.ID->次数
+  int64 FreeResetTime           = 3;  // 上次免费次数使用时间
+  int64 NextFreeResetTime       = 4;  // 下次免费次数重置时间
+  int64 CountReward             = 5;  // 抽数奖励组ID
+}
+
+message ActivityTurntableDrawCountData {
+  int64 Index                             = 1;  //主键
+  map<int32, int32> DrawCountMap          = 2;  //抽取次数  key: ActivityCountReward.RewardGroup value: 抽取次数
+  map<int32, bool> DrawCountRewardMap     = 3;  //已领取抽数奖励  key: ActivityCountReward.ID value: 是否已赢取
+}
+
+message ActivityTurntablePersistentData {
+  int64 ActivityID                = 1;
+  map<int32, bool> TransferData   = 2;  // ActivityTurntableDrop.ID->是否提示过已转化
+}

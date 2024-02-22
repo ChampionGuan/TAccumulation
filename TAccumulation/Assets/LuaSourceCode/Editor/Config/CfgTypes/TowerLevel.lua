@@ -1,0 +1,18 @@
+﻿---@class cfg.TowerLevel  excel名称:ClimbTower.xlsx
+---@field AttackRate int 攻击倍率千分比
+---@field BUFFArray cfg.s3int[] 祝福掉落
+---@field BUFFList cfg.s2int[] 祝福掉落
+---@field Conversation string 触发剧情
+---@field ConversationOver string 关卡后剧情
+---@field DefenceRate int 防御倍率千分比
+---@field EffectArray int[] 选项效果数组
+---@field EventList cfg.s2int[] 事件组
+---@field FloorID int 所属层
+---@field ID int 唯一ID
+---@field MaxHPRate int 血量倍率千分比
+---@field MonsterLevelFix int 怪物等级修正 废弃
+---@field PositionX int X轴坐标
+---@field PositionY int Y轴坐标
+---@field StageEntryID int[] 关联主线ID
+---@field Type int 关卡类型
+---@field Visible int 是否显示

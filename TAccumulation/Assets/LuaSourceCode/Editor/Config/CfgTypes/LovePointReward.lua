@@ -1,0 +1,11 @@
+﻿---@class cfg.LovePointReward  excel名称:LovePointLevel.xlsx
+---@field ExtraRewardDes1 int 额外奖励描述1&
+---@field ExtraRewardDes2 int 额外奖励描述2&
+---@field ExtraRewardDes3 int 额外奖励描述3&
+---@field ID int ID
+---@field Jump1 string[] 跳转1
+---@field Jump2 string[] 跳转2
+---@field Jump3 string[] 跳转3
+---@field LevelID int *等级ID
+---@field Reward cfg.s3int[] 好感度提升奖励
+---@field RoleID int *男主ID

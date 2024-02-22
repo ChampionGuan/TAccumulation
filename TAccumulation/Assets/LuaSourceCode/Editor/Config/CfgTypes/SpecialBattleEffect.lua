@@ -1,0 +1,23 @@
+﻿---@class cfg.SpecialBattleEffect  excel名称:SpecialBattleEffect.xlsx
+---@field ActionModTgtPar int Action效果输出主体 附加参数
+---@field ActionModTgtType int Action效果输出主体
+---@field EffectActionCD int Action触发CD
+---@field EffectActionEventCountCD int Action触发后事件计数CD
+---@field EffectActionExecRate int Action触发概率
+---@field EffectActionStartEventCountCD int Action起始时间计数CD
+---@field EffectActionType int Action效果类型
+---@field EffectActionTypePar1 int Action效果类型参数1
+---@field EffectActionTypePar2 int Action效果类型参数2
+---@field EffectActionTypePar3 int Action效果类型参数3
+---@field EffectActionTypePar4 int Action效果类型参数4
+---@field EffectActionTypePar5 int Action效果类型参数5
+---@field EffectActionTypePar6 int Action效果类型参数6
+---@field EventMatchRuleArtI int 监听Event 附加匹配规则1
+---@field EventMatchRuleArtII int 监听Event 附加匹配规则2
+---@field EventMatchRuleArtIIPar int 监听Event 附加匹配规则2参数
+---@field EventMatchRuleArtIPar int 监听Event 附加匹配规则1参数
+---@field ID int 唯一ID
+---@field MonitorEvent int 监听Event
+---@field MonitorEventHostPar int 监听Event主体参数
+---@field MonitorEventHostType int 监听Event主体
+---@field Name string #备注名称

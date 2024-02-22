@@ -1,0 +1,11 @@
+﻿---@class cfg.GemCoreAttr  excel名称:GemCore.xlsx
+---@field Attr int ##属性编号策划看
+---@field AttrID int 属性条目ID
+---@field AttrMax int 属性随机最大值
+---@field AttrMin int 属性随机最小值
+---@field AttrType int ##主属性or副属性
+---@field CountMax int 属性增加次数-最大次数（包含）
+---@field CountMin int 属性增加次数-最小次数（包含）
+---@field ID int 流水ID
+---@field Note string ##备注
+---@field Rank int 排序

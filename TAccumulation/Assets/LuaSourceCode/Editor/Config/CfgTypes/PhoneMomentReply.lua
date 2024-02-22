@@ -1,0 +1,12 @@
+﻿---@class cfg.PhoneMomentReply  excel名称:PhoneMoment.xlsx
+---@field ChoiceText int 展示选项&
+---@field ConditionNextID cfg.s2int[] 条件后续
+---@field DelayTime cfg.s2int 显示延时延时Min=延时Max
+---@field ID int 唯一ID
+---@field MomentID int 朋友圈ID
+---@field MyReply int[] 关联女主回复仅女主朋友圈起效仅支持回复一次
+---@field NextID int[] 关联后续ID
+---@field Replied int 被回复者ID
+---@field Reward cfg.s3int[] 获得奖励
+---@field Sender int 评论者ID
+---@field Text int 回复内容&

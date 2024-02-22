@@ -1,0 +1,17 @@
+﻿---@class cfg.UFOCatcherDollPool  excel名称:UFOCatcher.xlsx
+---@field BaseScore int 抓到的基础积分
+---@field Bonus int 当是女主想要的时，额外积分（绝对值）
+---@field ConversationID string 首次剧情conversation名
+---@field DailyDateStoryCollectID int 收集剧情ID
+---@field Des string ##策划用
+---@field Doll string ##策划用
+---@field DollID int 娃娃ID
+---@field DollNumMax int 单局放入最多个数
+---@field DollNumMin int 单局放入最少个数
+---@field Index int 唯一Key
+---@field Man string ##策划用
+---@field ModelInMachine string 娃娃机中用来抓的模型
+---@field PoolID int 奖池ID
+---@field PutType int 放入娃娃方式
+---@field Quality string ##策划用
+---@field Weight int 权重

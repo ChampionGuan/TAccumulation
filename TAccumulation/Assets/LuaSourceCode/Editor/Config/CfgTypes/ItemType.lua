@@ -1,0 +1,15 @@
+﻿---@class cfg.ItemType  excel名称:Item.xlsx
+---@field AutoItemSourceControl int 自动索引控制
+---@field ConstString string 类型名字
+---@field CornerMark int 道具角标显示控制
+---@field Desc string 描述
+---@field Display int 奖励显示
+---@field Id int 类型ID
+---@field InBag int 是否在背包中显示
+---@field MaxStackNumEnable int #堆叠上限是否有效
+---@field Order int 显示顺序
+---@field PageID int 所属背包页签
+---@field Spec int 是否带有属性
+---@field TipsShowType int Tips显示控制
+---@field Use int 背包中的使用按钮类型
+---@field Virtual int 是否虚拟道具

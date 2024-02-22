@@ -1,0 +1,15 @@
+﻿---@class cfg.Dialogue  excel名称:4501-SpecialDate_RY_01.xlsx
+---@field Actor int 说话者&
+---@field ChoiceCount int 选项数量
+---@field ConversationName string 属于哪个Conversation
+---@field DateText int 时间信息&
+---@field DialogueText int 对话文字&
+---@field EventName string 语音
+---@field FlippedNum int 心动值
+---@field ID int 节点主Key（ConversationIDx10000+NodeID）
+---@field LinkType int 链接类型
+---@field LocationText int 地点信息&
+---@field MenuText int 选项文字&
+---@field MultiDialogueText int 字幕&
+---@field NextIDs string[] 下一节点
+---@field NodeID int 节点ID

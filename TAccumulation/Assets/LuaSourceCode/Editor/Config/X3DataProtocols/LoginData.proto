@@ -1,0 +1,10 @@
+syntax = "proto3";
+package X3Data;
+
+message LoginData {
+    int64 primaryKey = 1;   // 主键
+    int32 serverId = 2;  //角色所在服务器id
+    string serverName = 3;//角色所在服务器名称
+    int32 zoneId = 4;  //角色所在大区id
+    string zoneName = 5;//角色所在大区名称
+}

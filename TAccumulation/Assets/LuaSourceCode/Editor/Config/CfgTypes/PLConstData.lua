@@ -1,0 +1,25 @@
+﻿---@class cfg.PLConstData  excel名称:PLConstData.xlsx
+---@field ATKType int 伤害类型
+---@field AntiHitActions int[] 抵抗受击类型
+---@field AntiHitTurn int 抵抗受击转向
+---@field AttackDistance int 基准攻击距离
+---@field BattleAiTreeName string AI
+---@field DefinitionType int 角色定位
+---@field DistanceType int 近战/远程
+---@field ElementType int 元素类型
+---@field EnergyAction int[] 能量获取途径
+---@field EntityOnHitBehaviorName string 受击行为树名称
+---@field EntityReviveEffect string 复活特效
+---@field EntityReviveEffectLenght int 复活特效长度
+---@field EntityReviveSound string 复活音效
+---@field EntityStageTreeName string 阶段转换
+---@field ID int ID
+---@field InitEnergy int 初始能量值
+---@field MaxEnergy int 最大能量值
+---@field MoveData undefined entitymovedata[] 移动数据
+---@field Radius int 角色半径
+---@field Scale int 模型缩放
+---@field StandardDeadEffect string 正常死亡特效
+---@field StandardDeadEffectLenght int 正常死亡特效长度
+---@field StandardDeadSound string 正常死亡音效
+---@field WwiseID int[] 战斗语音包

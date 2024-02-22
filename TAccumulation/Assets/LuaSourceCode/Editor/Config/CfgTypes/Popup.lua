@@ -1,0 +1,16 @@
+﻿---@class cfg.Popup  excel名称:Popup.xlsx
+---@field CommonQueue int 不同类型弹窗队列
+---@field ConstString string 界面key
+---@field DelayBlackList string[] 延迟黑名单
+---@field DelayBlackListType int 延迟黑名单判定方式
+---@field DelayWhiteList string[] 延迟白名单
+---@field DelayWhiteListType int 延迟白名单判定方式
+---@field ID int 唯一ID
+---@field InterfaceName string 界面名称
+---@field Monopolize int 是否独占
+---@field Priority int 优先级
+---@field QueueBlackList string[] 队列黑名单
+---@field QueueBlackListType int 队列黑名单判定方式
+---@field Remark string #策划备注
+---@field SceneClear int 切场景清除弹窗
+---@field SceneClearQueue int 切场景清除队列

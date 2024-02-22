@@ -1,0 +1,17 @@
+﻿---@class cfg.PhotoAction  excel名称:Photo.xlsx
+---@field ActionType int 动作类型
+---@field Conversation string 反馈剧情Conversation名
+---@field Desc string ##动作说明
+---@field DialogID int 反馈剧情ID
+---@field DialogProbability int 触发概率
+---@field ExcludeFashion int[] 互斥服装（具体ID）
+---@field ExcludeFashionPart int[] 互斥服装部位
+---@field HostingWeight int 托管模式抽取权重
+---@field ID int 唯一ID
+---@field IsBasePackage int 是否进A包
+---@field ModelGroup int[] 所属模式组
+---@field PreviewImg string 动作预览图
+---@field PreviewTipsImg string 动作预览tips图
+---@field Resource string 默认动作资源
+---@field Role int 动作所属角色
+---@field Type int 动作人数

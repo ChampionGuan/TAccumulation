@@ -1,0 +1,11 @@
+﻿---@class cfg.PhotoCamera  excel名称:Photo.xlsx
+---@field BottomRigHeight float BottomRig高度
+---@field BottomRigRadius float BottomRig半径
+---@field ID int 唯一ID
+---@field MiddleRigHeight float MiddleRig高度
+---@field MiddleRigRadius float MiddleRig半径
+---@field Name string ##说明
+---@field RadiusMax float 最大半径
+---@field RadiusMin float 最小半径
+---@field TopRigHeight float TopRig高度
+---@field TopRigRadius float TopRig半径

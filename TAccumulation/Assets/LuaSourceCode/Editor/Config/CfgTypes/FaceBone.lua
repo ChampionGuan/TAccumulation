@@ -1,0 +1,11 @@
+﻿---@class cfg.FaceBone  excel名称:Face.xlsx
+---@field BoneAreaID1 int 区域ID（R通道值）（0~255）
+---@field BoneAreaID2 int 区域ID（G通道值）（0~255）
+---@field CameraNode string 相机节点名
+---@field Class int 分类名&
+---@field ClassID int 大类ID
+---@field DiffusionCenter float[] 扩散中心（0-1）
+---@field ID int 唯一ID
+---@field SubClass int 小类名&
+---@field SubClassIconSelected string 小类图标（选中）
+---@field SubClassIconUnSelect string 小类图标（未选中）

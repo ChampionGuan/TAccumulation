@@ -1,0 +1,20 @@
+syntax = "proto3";
+package X3Data;
+
+// 芯核相关数据
+message GemCoreData {
+  int64 Primary = 1;
+  map<int32, int32> BindCard = 2;  // key:gen val:被装备到cardId
+  map<int32, bool> LockCore = 3;  // 是否锁定
+}
+
+//芯核实例数据
+message GemCore {
+  int64 Id = 1;  // 芯核实例Id
+  int32 TblID = 2;  // cfgId 配置Id
+  int32 Level = 3; //芯核等级
+  int32 Exp = 4; //芯核经验
+  repeated uint64 Attrs = 5;  // 列表 tblDropID(GemCoreAttrDrop.ID):24,RandCount:8,Val:32
+  int32 ResolveAddExp = 6;//分解该芯核获得的经验
+  int32 PlayerUid = 7;//玩家id 只在查看Other个人信息时才会有uid
+}

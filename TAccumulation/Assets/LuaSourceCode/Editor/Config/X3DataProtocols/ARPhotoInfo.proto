@@ -1,0 +1,13 @@
+syntax = "proto3";
+package X3Data;
+message ARPhotoData {
+  int64 id = 1;
+  int32 backgroundID = 2;
+  int32 actionID = 3;
+  map<int32, int32> clothDataList = 4;
+  float beautyDelta = 5;
+  int32 lightID = 6;
+  float lightIntensity = 7;
+  bool useRealIntensity = 8;
+  float lightAngles = 9;
+}

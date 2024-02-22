@@ -1,0 +1,56 @@
+﻿--警告 文件内容通过菜单修改  请勿更改--
+
+---@class pbcmessage.ClientInfo @    SouthKorea        = 5;   韩国
+---@field vGameAppid string @ 游戏 APPID
+---@field PlatID number @ 渠道ID；官方iOS 
+---@field SubPlatID number @ 子渠道号没有填 0
+---@field IDFA string @ 苹果 IDFA
+---@field oaID string @ 安卓 国内广告ID
+---@field AndroidID string @ 安卓 AndroidID
+---@field DeviceId string @ 设备信息，苹果：IDFV；安卓，Build.SERIAL
+---@field SystemSoftware string @ 移动终端操作系统版本：如ios 14.1
+---@field SystemSoftwareVersion string @ 移动终端操作系统版本：如ios 14.1
+---@field SystemHardware string @ 移动终端机型，eg：MI Y67A
+---@field TelecomOper string @ 运营商
+---@field Network string @ WIFI5G4G3G2G
+---@field ScreenWidth number @ 显示屏宽度
+---@field ScreenHight number @ 显示屏高度
+---@field Density number @ 像素密度
+---@field CpuHardware string @ cpu类型-频率-核数
+---@field Memory number @ 当前APP占用内存信息单位M
+---@field GPUHardware string @ GPUHardware
+---@field GraphicsAPI string @ OpenGL, Vulkan
+---@field IpAddress string 
+---@field CpuSoc string 
+---@field CpuCore number 
+---@field CpuFreq string 
+---@field GameLanguage number @ 文本类型，1：简中，2：繁中，3：英，4：日，5：韩
+---@field DubbingLanguage number @ 语音类型，枚举同上
+---@field ClientTimezone string 
+---@field ClientLanguage string 
+---@field ClientRegion pbcmessage.Region @ 客户端包体的地区，1：大陆，2：港澳台，3：欧美、东南亚，4：日本，5：韩国
+---@field InjectFixVersion string @ 战斗热更对应的版本号 计入tLog,给qa查询用
+---@field RequestID string 
+---@field IDFV string 
+---@field MacAddress string 
+---@field SystemType string 
+---@field SystemDeviceType string 
+---@field OsVersion string 
+---@field AfID string 
+---@field FirebaseID string 
+---@field PackageName string 
+---@field Ipv6 string 
+---@field AdPlatID string 
+---@field ClientIP string 
+---@field ClientIPv6 string 
+---@field SdkVersion string 
+---@field UserAgent string 
+---@field ActivityID string 
+---@field SessionID string 
+---@field Caid string 
+---@field SystemMachine string 
+---@field CpuModel string 
+---@field AppMemory number 
+---@field AllMemory number 
+---@field GaID string 
+local  ClientInfo  = {}

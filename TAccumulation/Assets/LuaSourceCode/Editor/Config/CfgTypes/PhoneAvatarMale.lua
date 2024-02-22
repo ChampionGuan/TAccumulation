@@ -1,0 +1,11 @@
+﻿---@class cfg.PhoneAvatarMale  excel名称:PhoneAvatar.xlsx
+---@field AchievementCondition int 成就条件
+---@field Des string ##策划备注
+---@field ID int 头像ID
+---@field LovePointLevelCondition int 头像解锁好感度条件
+---@field PlayerLevelCondition int 头像解锁玩家等级条件
+---@field Resource string 头像资源
+---@field Role int 所属男主
+---@field SpecialFeedbackType int 头像特殊反馈类型
+---@field TimeCondition undefined time 头像解锁时间条件
+---@field Unextractable2 int 是否不能被抽取

@@ -1,0 +1,51 @@
+syntax = "proto3";
+package X3Data;
+
+message ChooseRecord {
+    int64 Id  = 1;
+    int64 Num = 2;
+}
+
+message PlayerChoose {
+	int64 RoleID 							= 1;
+    map<int32, ChooseRecord> Chooses		= 2;  	// key: TagID value.Id:LastChooseTime value.Num:ChooseNum
+    int64 LastWeeklyRefreshTime 			= 3;  	// 更新的时候保证是最新的
+	map<int32, int32> ContinueAddScore 		= 4; 	// key: TagID value: 连续加分次数
+    map<int32, int32> ContinueDecScore 		= 5; 	// key: TagID value: 连续减分次数
+}
+
+
+message PlayerRecommendRecord {
+    int64 TagID				= 1;	// 最近一次接受推荐的TagID
+    int32 RecommendNum		= 2;	// 推荐的次数
+    int64 LastRecommendTime = 3; 	// 最近一次接受推荐的时间
+}
+
+message PlayerRecommend {
+    int64 RoleID                              		= 1;  // 男主ID
+    map<int32, PlayerRecommendRecord> RecommendMap  = 2;  // 根据类型记录最近一次接受的推荐，key:TagType value:
+}
+
+message PlayerTagRecord{
+	int64 RoleID = 1;
+	map<int32, PlayerTag> TagMap             = 2;
+}
+
+message PlayerTag {
+    int64 ID        = 1;  // tag表 ID
+    int32 Score     = 2;  // 得分
+    int32 ChooseNum = 3;  // 被选中的次数 用于计算被选则率
+    int32 AppearNum = 4;  // 在选项中出现的次数 用于计算被选则率
+    int64 SetTime   = 5;  // 设置分数的时间，用于CD。 为0时表示没设置过，没有CD；不为0时表示设置的时间
+    bool InitScore  = 6;  // 是否设置过Score, 用于区分默认值和零值
+}
+
+message FavoriteRecord {
+	int64 RoleID 							= 1;
+	map<int32, PlayerFavorite> FavoriteMap	= 2;
+}
+
+message PlayerFavorite {
+    int64 ID            = 1;  // Favorite表 ID
+    repeated int32 List = 2;  // 选择的列表，限制个数，先进先出
+}

@@ -1,0 +1,15 @@
+﻿---@class cfg.PlayerLevel  excel名称:PlayerLevel.xlsx
+---@field AttrAddList cfg.s2int[] 其他属性加成
+---@field BreakDefence int 刚性值
+---@field CritHurtAdd int 基准暴击伤害
+---@field ElementRatio int 基准元素适应系数
+---@field LeaveGiftGoldRatio int 挂机礼盒金币系数（每分钟获取金币，除100后计算）
+---@field Level int 等级ID
+---@field LevelPresent cfg.s3int[] 升到该等级获得的赠品
+---@field MaxStamina int 该等级体力自然恢复最大值
+---@field NextAddExp int 升到下一级需要的经验
+---@field PropCritVal int 基准暴击率千分比
+---@field PropMaxHP int 基准生命值
+---@field PropPhyAtk int 基准物理攻击
+---@field PropPhyDef int 基准物理防御
+---@field SCoreMaxLevel int 该等级时Score的最大等级

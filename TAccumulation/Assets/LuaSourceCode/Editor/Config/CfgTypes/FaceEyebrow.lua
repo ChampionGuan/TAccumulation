@@ -1,0 +1,12 @@
+﻿---@class cfg.FaceEyebrow  excel名称:Face.xlsx
+---@field Color string 整体叠加颜色RGB
+---@field ColorID int 颜色ID
+---@field ColorIcon string 眉色Icon
+---@field Des string ##备注
+---@field ID int 唯一ID
+---@field ItemCondition int 道具条件
+---@field RGBSource string RGB调色时使用贴图资产
+---@field ShowType int 显示条件
+---@field Source string 推荐眉妆资源贴图
+---@field StyleID int 样式ID
+---@field StyleIcon string 眉形Icon

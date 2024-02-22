@@ -1,0 +1,17 @@
+﻿---@class cfg.TowerBUFF  excel名称:ClimbTower.xlsx
+---@field BUFFDesc int 水晶描述&
+---@field EffectID int 生效ID
+---@field EffectLevel int 被动技能等级
+---@field EffectType int 水晶生效对象
+---@field FightPercent int 战力提升千分比
+---@field Group int *种类
+---@field ID int 唯一ID
+---@field IsGood int 是否增益
+---@field Level int *水晶等级
+---@field LevelCover int 是否覆盖等级
+---@field Name int 水晶名称&
+---@field Order int 排序
+---@field OverLay int 是否可叠加
+---@field Path string 水晶图标
+---@field Quality int 水晶品质
+---@field Type int 水晶类型

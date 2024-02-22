@@ -1,0 +1,11 @@
+﻿---@class cfg.SkillPassiveConfig  excel名称:BattleSkillPassive.xlsx
+---@field AddBuff int[] 附加Buff编号
+---@field AddBuffLevel int[] 附加Buff等级
+---@field Desc string 技能描述
+---@field Level int 技能等级*
+---@field LevelID int 唯一ID
+---@field MountType int[] 挂载目标类型
+---@field Name string 技能名称
+---@field SkillID int 技能ID*
+---@field SkillIcon string 技能图标
+---@field SkillType int 技能类型

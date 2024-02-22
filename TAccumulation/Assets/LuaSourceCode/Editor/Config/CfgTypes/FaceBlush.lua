@@ -1,0 +1,11 @@
+﻿---@class cfg.FaceBlush  excel名称:Face.xlsx
+---@field ColorID int 颜色ID
+---@field ColorIcon string 腮红颜色Icon
+---@field Des string ##备注
+---@field ID int 唯一ID
+---@field IsDefaultColor int 是否为默认颜色
+---@field ItemCondition int 道具条件
+---@field ShowType int 显示条件
+---@field Source string 腮红贴图资源
+---@field StyleID int 样式ID
+---@field StyleIcon string 腮红样式Icon
