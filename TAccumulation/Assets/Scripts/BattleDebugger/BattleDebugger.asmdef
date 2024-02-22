@@ -1,0 +1,26 @@
+{
+    "name": "BattleDebugger",
+    "references": [
+        "GUID:6e7b8a68c144c1340a1f627c10ce4cc6",
+        "GUID:cc58aad55d153a243a7314bef56095f0",
+        "GUID:f50c65b34bddde648bde152d8e2c4836",
+        "GUID:483b92b2a3fb8904ab4aaa4e57b28a62",
+        "GUID:2a4148a75eeae9c4580d626cffe9530f",
+        "GUID:2bafac87e7f4b9b418d9448d219b01ab",
+        "GUID:343deaaf83e0cee4ca978e7df0b80d21",
+        "GUID:2312e60249410194f9b5188585879e8f",
+        "GUID:79f87504f86fe2943b6f6754c93d7182",
+        "GUID:13a93b2f76c02d54bbcb52de6fcb5c29",
+        "GUID:63a6f35afa28cda4fb27577454beb3bf",
+        "GUID:251d66ce0b13e7843bb85ed8073cf782"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

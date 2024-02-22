@@ -1,0 +1,29 @@
+﻿<linker>
+    <assembly fullname="BattleClient">
+        <namespace fullname="IFix" preserve="all" />
+    </assembly>
+    <assembly fullname="X3Core.Runtime">
+        <namespace fullname="IFix" preserve="all" />
+    </assembly>
+    <assembly fullname="PlayableAnimator">
+        <namespace fullname="IFix" preserve="all" />
+    </assembly>
+    <assembly fullname="Papegames.FxPlayer.Runtime">
+        <namespace fullname="IFix" preserve="all" />
+    </assembly>
+    <assembly fullname="Papegames.CurveAnimator.Runtime">
+        <namespace fullname="IFix" preserve="all" />
+    </assembly>
+    <assembly fullname="X3Sequence">
+        <namespace fullname="IFix" preserve="all" />
+    </assembly>
+    <assembly fullname="MsgPack.Runtime">
+        <namespace fullname="IFix" preserve="all" />
+    </assembly>
+    <assembly fullname="X3Impulse">
+        <namespace fullname="IFix" preserve="all" />
+    </assembly>
+    <assembly fullname="X3VirtualCamera">
+        <namespace fullname="IFix" preserve="all" />
+    </assembly>
+</linker>

@@ -1,0 +1,16 @@
+{
+    "name": "PlayableAnimator",
+    "references": [
+        "GUID:63a6f35afa28cda4fb27577454beb3bf",
+        "GUID:f50c65b34bddde648bde152d8e2c4836"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
